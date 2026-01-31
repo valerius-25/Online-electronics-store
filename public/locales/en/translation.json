@@ -1,0 +1,718 @@
+{
+  "navigation": {
+    "home": "Home",
+    "arduino": "Arduino",
+    "accumulators": "Accumulators",
+    "power": "Power",
+    "sensorsModules": "Sensors & Modules",
+    "connectivity": "Connectivity",
+    "accessories": "accessories",
+    "kits": "kits",
+    "loading": "loading...",
+    "goback": "Go back",
+    "remuve": "remuve",
+    "products": "products",
+    "totalprice": "total"
+  },
+  "arduino": {
+    "uno": {
+      "description": "Arduino UNO is a microcontroller board based on the ATmega328P. It has 14 digital input/output pins (of which 6 can be used as PWM outputs), 6 analog inputs, a 16 MHz ceramic resonator, a USB connection, a power jack, an ICSP header and a reset button. It contains everything needed to support the microcontroller; simply connect it to a computer with a USB cable or power it with a AC-to-DC adapter or battery to get started. You can tinker with your UNO without worrying too much about doing something wrong, worst case scenario you can replace the chip for a few dollars and start over again."
+    },
+    "nanoR4": {
+      "description": "The Arduino Nano R4 brings the power of a 32-bit Arm® Cortex®-M4 processor to the beloved Nano family board form factor. Based on the Renesas RA4M1 microcontroller, it features 256 kB Flash, 32 kB SRAM and an 8 kB EEPROM, all running at 48 MHz with a built-in real-time clock (RTC), 14-bit ADC and a 12-bit DAC."
+    },
+    "proMini": {
+      "description": "It has 14 digital input/output pins (of which 6 can be used as PWM outputs), 6 analog inputs, an on-board resonator, a reset button, and holes for mounting pin headers. A six pin header can be connected to an FTDI cable or Sparkfun breakout board to provide USB power and communication to the board. The Arduino Pro Mini is intended for semi-permanent installation in objects or exhibitions. The board comes without pre-mounted headers, allowing the use of various types of connectors or direct soldering of wires. The pin layout is compatible with the Arduino Mini."
+    },
+    "mega2560": {
+      "description": "The Arduino Mega 2560 is a microcontroller board based on the ATmega2560. It has 54 digital input/output pins (of which 15 can be used as PWM outputs), 16 analog inputs, 4 UARTs (hardware serial ports), a 16 MHz crystal oscillator, a USB connection, a power jack, an ICSP header, and a reset button. It contains everything needed to support the microcontroller; simply connect it to a computer with a USB cable or power it with a AC-to-DC adapter or battery to get started. The Mega 2560 board is compatible with most shields designed for the Uno and the former boards Duemilanove or Diecimila"
+    },
+    "leonardo": {
+      "description": "The Arduino Leonardo is a microcontroller board based on the ATmega32u4 (datasheet). It has 20 digital input/output pins (of which 7 can be used as PWM outputs and 12 as analog inputs), a 16 MHz crystal oscillator, a micro USB connection, a power jack, an ICSP header, and a reset button. It contains everything needed to support the microcontroller; simply connect it to a computer with a USB cable or power it with a AC-to-DC adapter or battery to get started."
+    },
+    "nano": {
+      "description": "The Arduino Nano is a small, complete, and breadboard-friendly board based on the ATmega328 (Arduino Nano 3.x). It has more or less the same functionality of the Arduino Duemilanove, but in a different package. It lacks only a DC power jack, and works with a Mini-B USB cable instead of a standard one."
+    },
+    "GroveDisplay": {
+      "description": "A 4 digit display module usually uses 12 pins. In this Grove gadget the TM1637 is used to scale down the control pins into two Grove pins. This way It only takes two digital pins from an Arduino to control the content on the display, this even includes the luminance of the display. For projects that require a alpha-numeric display, this is a great choice."
+    },
+    "16x2_lcd_i2c_display": {
+      "description": "Particularly suitable for reducing the number of I/Os required when used with Arduino or other microcontroller, the I²C interface has jumpers to activate the backlight and contrast adjustment which is carried out via a small trimmer."
+    },
+    "grove_oled_0.96_display": {
+      "description": "Compared to LCD, OLED screens have a number of advantages such as high brightness, self-emission, high contrast ratio, slim / thin outline, wide viewing angle, wide temperature range, and low power consumption."
+    },
+    "giga_display_shield": {
+      "description": "The Arduino GIGA Display Shield is a feature-rich touchscreen add-on for the Arduino GIGA R1 WiFi board, enabling quick creation of graphical user interfaces (GUIs) with a 3.97 480x800 display, integrated digital microphone (PDM), 6-axis IMU (accelerometer/gyroscope), RGB LED, and an Arducam connector for cameras, allowing for powerful interactive dashboards, handheld devices, and advanced UIs using libraries like LVGL and GFX"
+    },
+    "common": {
+      "operatingVoltage": "Operating Voltage",
+      "dcCurrent": "DC Current",
+      "clockSpeed": "Clock Speed",
+      "weight": "Weight",
+      "width": "Width",
+      "length": "Length",
+      "flashMemory": "Flash Memory",
+      "sram": "SRAM",
+      "eeprom": "EEPROM",
+      "inputVoltageRecommended": "Input Voltage (recommended)",
+      "inputVoltageVIN": "Input Voltage (VIN)",
+      "ioCurrent": "DC Current per I/O Pin",
+      "connectivity": "Connectivity",
+      "voltage": "Voltage",
+      "dimensions": "Dimensions",
+      "controller": "Controller",
+      "interface": "Interface",
+      "displayType": "Display Type",
+      "brightness": "Brightness",
+      "features": "Features",
+      "displaySize": "Display Size",
+      "characterFormat": "Character Format",
+      "displayTechnology": "Display Technology",
+      "backlight": "Backlight",
+      "contrast": "Contrast",
+      "controllerChip": "Controller Chip",
+      "communicationProtocol": "Communication Protocol",
+      "pinsRequired": "Pins Required",
+      "i2cAdapterChip": "I²C Adapter Chip",
+      "defaultI2cAddress": "Default I²C Address",
+      "addressModification": "Address Modification",
+      "operatingCurrent": "Operating Current",
+      "resolution": "Resolution",
+      "power": "Power",
+      "driverIC": "Driver IC",
+      "color": "Color",
+      "operatingTemperature": "Operating Temperature",
+      "compatibility": "Compatibility",
+      "technicalSpecifications": "Technical Specifications"
+    }
+  },
+  "accumulators": {
+    "liIon18650": {
+      "description": "The Samsung 25R 18650 Battery is a high-quality, rechargeable lithium-ion power cell designed for demanding applications. With a robust 2500mAh capacity and a high 20A continuous discharge rate, this battery is perfect for power-hungry devices, ensuring long-lasting performance and reliability."
+    },
+    "liIon30Q18650": {
+      "description": "The Samsung 30Q 18650 Battery is a high-quality, rechargeable lithium-ion power cell, designed for applications requiring a balance of capacity and discharge rate. With a 3000mAh capacity and a 15A continuous discharge rate, this battery is an excellent choice for high-drain devices that need reliable, long-lasting power."
+    },
+    "liIon26V18650": {
+      "description": "The EVE 26V 18650 Battery is a high-capacity lithium-ion rechargeable power cell, designed to deliver long-lasting and reliable energy for various applications. With a 2600mAh capacity and a 6A continuous discharge rate, this battery is well-suited for devices that require steady and efficient power output without extreme drain requirements."
+    },
+    "liIonP30B18650": {
+      "description": "The Molicel P30B 18650 Battery is a premium, high-drain lithium-ion power cell designed for demanding applications. Featuring an impressive 3000mAh capacity and a continuous discharge rate of 30A, this battery ensures long-lasting performance and reliability for power-intensive devices."
+    },
+    "liIonEFEST18650": {
+      "description": "The Efest 3000mAh 20A 18650 Battery is a high-capacity rechargeable lithium-ion power cell designed for high-drain applications. Featuring a 3000mAh capacity and a 20A continuous discharge rate, this battery provides long-lasting and stable performance, making it a reliable choice for power-hungry devices."
+    },
+    "liIonNCR18650": {
+      "description": "The Panasonic NCR18650GA is a high-capacity, 18650 Li-ion rechargeable battery known for balancing long runtimes (3450mAh) with high power (10A continuous discharge), making it great for e-bikes, power tools, and high-drain devices; it's an unprotected, flat-top cell, meaning it needs a smart charger and careful handling due to its sensitive nature."
+    },
+    "liIonNCRGA18650": {
+      "description": "The Sanyo NCR18650GA 18650 Battery is a high-capacity lithium-ion rechargeable power cell, designed for applications requiring long-lasting performance and consistent power output. With an impressive 3500mAh capacity and a continuous discharge rate of 10A, this battery is an excellent choice for moderate to high-drain devices needing extended runtime."
+    },
+    "liIonEpoch18650": {
+      "description": "The Epoch 18650 3500mAh 8A USB Rechargeable Protected Battery is a high-capacity lithium-ion rechargeable battery designed for maximum convenience and safety. Featuring a built-in USB-C charging port, this battery eliminates the need for an external charger, making it perfect for on-the-go applications. With a 3500mAh capacity, an 8A continuous discharge rate, and built-in protection circuitry, this battery provides reliable power with enhanced safety against overcharging, over-discharging, and short circuits."
+    },
+    "liIonM35A18650": {
+      "description": "The Molicel M35A Protected Button Top 18650 Battery is a high-capacity lithium-ion rechargeable power cell equipped with a protection circuit to enhance safety and prevent overcharging, over-discharging, and short circuits. With a 3500mAh capacity and a continuous discharge rate of 10A, this battery is an excellent choice for moderate-drain applications, ensuring stable power output and long-lasting performance in devices that require added protection."
+    },
+    "liPo100mAh": {
+      "description": "Lithium-ion polymer (also known as 'lipo' or 'lipoly') batteries are thin, light, and powerful. The output ranges from 4.2V when completely charged to 3.7V. This battery has a capacity of ~100mAh for a total of about 0.4 Wh. If you need a larger battery"
+    },
+    "liPo150mAh": {
+      "description": "Lithium-ion polymer (also known as 'lipo' or 'lipoly') batteries are thin, light, and powerful. The output ranges from 4.2V when completely charged to 3.7V. This battery has a capacity of 150mAh for a total of about 0.6 Wh. If you need a larger battery."
+    },
+    "liPo350mAh": {
+      "description": "Lithium-ion polymer (also known as 'lipo' or 'lipoly') batteries are thin, light, and powerful. The output ranges from 4.2V when completely charged to 3.7V. This battery has a capacity of 350mAh for a total of about 1.3 Wh. If you need a larger (or smaller!) battery"
+    },
+    "liPo400mAh": {
+      "description": "Lithium-ion polymer (also known as 'lipo' or 'lipoly') batteries are thin, light, and powerful. The output ranges from 4.2V when completely charged to 3.7V. This battery has a capacity of 400mAh for a total of about 1.9 Wh. If you need a larger (or smaller!) battery"
+    },
+    "liPo500mAh": {
+      "description": "Lithium-ion polymer (also known as 'lipo' or 'lipoly') batteries are thin, light, and powerful. The output ranges from 4.2V when completely charged to 3.7V. This battery has a capacity of 500mAh for a total of about 1.9 Wh. If you need a larger (or smaller!) battery"
+    },
+    "liPo1200mAh": {
+      "description": "Lithium-ion polymer (also known as 'lipo' or 'lipoly') batteries are thin, light, and powerful. The output ranges from 4.2V when completely charged to 3.7V. This battery has a capacity of 1200mAh for a total of about 4.5 Wh. If you need a larger battery"
+    },
+    "liPo2000mAh": {
+      "description": "Lithium-ion polymer (also known as 'lipo' or 'lipoly') batteries are thin, light, and powerful. The output ranges from 4.2V when completely charged to 3.7V. This battery has a capacity of 2500mAh for a total of about 10 Wh. If you need a smaller battery"
+    },
+    "liPo2500mAh": {
+      "description": "Lithium-ion polymer (also known as 'lipo' or 'lipoly') batteries are thin, light, and powerful. The output ranges from 4.2V when completely charged to 3.7V. This battery has a capacity of 2500mAh for a total of about 10 Wh. If you need a smaller battery,"
+    },
+    "liIon4400mAh": {
+      "description": "Need a big battery for your project? This lithium-ion pack is made of 2 balanced 2200mAh cells for a total of 4400mA capacity! The cells are connected in parallel and spot-welded to a protection circuit that provides over-voltage, under-voltage, and over-current protection.Each cell can provide 1A of current for about 4 hours so all together the peak current you can draw is a little over 1.5 Amps. Note that these batteries are not designed to sustain such high loads, we suggest keeping any constant current draw under 1A."
+    },
+    "liIon6600mAh": {
+      "description": "Need a massive battery for your project? This lithium-ion pack is made of 3 balanced 2200mAh cells for a total of 6600mA capacity! The cells are connected in parallel and spot-welded to a protection circuit that provides over-voltage, under-voltage, and over-current protection.Each cell can provide 0.5C of current (1.1 A per) so all together the peak current you can draw is over 3.3 Amps. Note that these batteries are not designed to sustain such high loads, we suggest keeping any constant current draw under 0.2C or 1.3A."
+    },
+    "liIon10050mAh": {
+      "description": "Lithium-ion (also known as 'liion' or 'li-ion') batteries are thin, light, and powerful. The output ranges from 4.2V when completely charged to 3.7V. This battery has a capacity of 10,050mAh (a.k.a 10 Ah) for a total of about 37 Wh. If you don't need as much power"
+    },
+    "tattu6S4500mAh": {
+      "description": "The Tattu 6S 4500mAh 22.2V 25C Lipo Drone Battery is a soft pack battery suitable for various fields. It adopts the stacking production process, featuring high capacity, high discharge rate, and stable discharge platform for quadcopters. In addition, more customized services for battery solutions are available, including voltage, size, capacity, temperature, discharge rate and other aspects."
+    },
+    "tattu6S6000mAh": {
+      "description": "The Tattu 6S 6000mAh 22.2V 35C Lipo Drone Battery is a soft pack battery, highly flexible configuration and adapted to various drone applications suitable for various fields. It adopts the stacking production process, featuring high capacity, high discharge rate and stable discharge platform for quadcopters. In addition, more customized services for battery solutions are available, including voltage, size, capacity, temperature, discharge rate and other aspects."
+    },
+    "tattu6S7000mAh": {
+      "description": "The Tattu G-Tech 6S 7000mAh 22.2V 25C Lipo Drone Battery is a soft pack battery, highly flexible configuration designed for diverse drone applications. Its stacked production process ensures ample capacity, high discharge rates, and stable performance, making it a popular choice for commercial UAVs and professional drones. In addition, more extensive customization options for battery solutions are available, including voltage, size, capacity, temperature, discharge rate and others."
+    },
+    "tattu6S8000mAh": {
+      "description": "The Tattu G-Tech 8000mAh 6S 25C 22.2V Lipo battery is a flexible soft pack battery designed for diverse applications. Its stacked production process ensures ample capacity, high discharge rates, and stable performance, making it a popular choice for commercial UAVs and professional drones. Moreover, it offers extensive customization options, including voltage, capacity, temperature, discharge rate, and more."
+    },
+    "tattu6S9000mAh": {
+      "description": "The Tattu 6S 9000mAh 22.2V 25C Lipo Drone Battery is a soft pack battery, highly flexible configuration and adapted to various drone applications suitable for various fields. It adopts the stacking production process, featuring high capacity, high discharge rate and stable discharge platform for UAVs. In addition, more customized services for battery solutions are available, including voltage, size, capacity, temperature, discharge rate and other aspects."
+    },
+    "tattu6S10000mAh": {
+      "description": "The Tattu G-Tech 10000mAh 6S 30C 22.2V Lipo battery is a soft pack drone battery suitable for various fields. It adopts a stacked production process, featuring large capacity, high discharge rate, and stable discharge platform, widely used in commercial UAVs and professional drones. Additionally, more battery customization are allowed, including voltage, capacity, temperature, discharge rate, and more."
+    },
+    "tattu6S12000mAh": {
+      "description": "The Tattu G-Tech 12000mAh 6S 30C 22.2V Lipo battery is a soft pack drone battery suitable for various fields. It adopts a stacked production process, featuring large capacity, high discharge rate, and stable discharge platform widely used in commercial uav and professional drones. In addition, Grepow provides more battery customization services, including voltage, capacity, temperature, discharge rate, and more."
+    },
+    "tattu6S16000mAh": {
+      "description": "The Tattu 16000mAh 6S 30C 22.2V Lipo battery is a soft pack drone battery suitable for various models. It adopts a stacked production process, featuring large capacity, high discharge rate, and stable discharge platform. The battery is convenient for series and parallel connections and is widely used in medium and large drones. In addition, Grepow provides more battery customization services, including voltage, capacity, temperature, discharge rate, and more."
+    },
+    "tattu6S22000mAh": {
+      "description": "The Tattu G-Tech 22000mAh 6S 30C 22.2V Lipo battery is a soft pack drone battery suitable for various fields. It adopts a stacked production process, featuring large capacity, high discharge rate, and stable discharge platform, widely used in professional UAVs. In addition, Grepow provides more battery customization services, including voltage, capacity, temperature, discharge rate, and more."
+    },
+    "tattu6S28000mAh": {
+      "description": "The Tattu 6S 28000mAh 22.2V 25C Lipo Drone Battery is a UAV soft pack battery suitable for a variety of models. It adopts the stacking production process, featuring high capacity, high multiplication rate, and stable discharge platform for high machines, and is widely used in medium and large-sized UAVs. In addition, Grepow provides more customized services for battery solutions, including voltage, size, capacity, temperature, discharge rate and other aspects."
+    },
+    "tattu6S30000mAh": {
+      "description": "The Tattu G-Tech 30Ah 6S 25C 22.2V Lipo battery is a flexible soft pack battery designed for diverse applications. Its stacked production process ensures ample capacity, high discharge rates, and stable performance, making it a popular choice for commercial UAVs and professional drones. Moreover, it offers extensive customization options, including voltage, capacity, temperature, discharge rate, and more."
+    },
+    "common": {
+      "fullChargeVoltage": "full charge voltage",
+      "operatingVoltage": "Operating Voltage",
+      "dcCurrent": "DC Current",
+      "weight": "Weight",
+      "width": "Width",
+      "length": "Length",
+      "height": "Height",
+      "connectivity": "Connectivity",
+
+      "nominalVoltage": "Nominal Voltage",
+      "capacity": "Capacity",
+      "energy": "Energy",
+      "batteryType": "Battery Type",
+      "configuration": "Configuration",
+      "diameter": "Diameter",
+
+      "standardChargeCurrent": "Standard Charge Current",
+      "rapidChargeCurrent": "Rapid Charge Current",
+      "maxChargeCurrent": "Maximum Charge Current",
+      "chargingVoltage": "Charging Voltage",
+
+      "standardDischargeCurrent": "Standard Discharge Current",
+      "maxDischargeCurrent": "Maximum Discharge Current",
+      "dischargeRate": "Discharge Rate",
+      "maxBurstDischargeRate": "Max Burst Discharge Rate",
+      "dischargeCutoffVoltage": "Discharge Cut-off Voltage",
+
+      "maxChargeTemp": "Maximum Charge Temperature",
+      "dischargeTemp": "Discharge Temperature",
+      "internalImpedance": "Internal Impedance",
+
+      "connectorLength": "Connector Length",
+      "balancerConnector": "Balancer Connector Type",
+      "output": "Output",
+
+      "brand": "Brand",
+      "model": "Model",
+      "continuousDischargeRate": "continuous discharge rate (CDR)",
+      "rechargeable":"rechargeable",
+      "protected": "protected (battery)",
+      "cycleLife": "cycle life"
+    }
+  },
+  "power": {
+    "tp4056_charging_boost": {
+      "description": "Product Description: This is a new type of charging and discharging integrated charging and boosting power board module, not only solves the limitation of only charging or only discharging, but also compact and lightweight design, easy to install and use, worthy of your choice. Module parameters: voltage range: 5~6V, current: 1A , interface: Type-C. When the charging current drops to 100mA after reaching the final float voltage, the charging cycle will be automatically terminated；When the battery voltage drops below 4.05V (which corresponds to 80% to 90% of the battery capacity), the charging cycle will restart；When the battery voltage drops below 4.05V (roughly corresponds to 80% to 90% of the battery capacity), the charging cycle will restart；When the battery voltage is below 2.9V, the battery will be pre-charged with a current of 100mA. Protection function: with protection board, it can realise over-voltage protection, over-discharge protection and over-current protection. Over-discharge protection value: 2.4V; over-current protection value: 4A. Note: the first time you need to connect the power supply to activate the protection board; the battery can not be reversed; the battery terminal voltage can not exceed the purchased voltage; the battery can only be connected in parallel, not in series, if connected in series will damage the module"
+    },
+    "tp4056_micro_usb_charger": {
+      "description": "The HiLetgo TP4056 Type-C USB 5V 1A 18650 Lithium Battery Charger Module is a compact and reliable charging board designed for single-cell lithium-ion batteries, such as 18650 cells. It features a USB Type-C input port for easy connection to a modern 5 V power source and uses a standard TP4056 charger IC with built-in dual protection circuitry to safeguard the battery against over-charge, over-discharge, over-current, and short circuits. RobolifeShop+1. This module implements a constant-current/constant-voltage (CC/CV) charging profile, terminating the charge safely at 4.2 V and drawing up to 1 A of charging current. Red and blue/green LEDs indicate charging status (“charging” and “fully charged”), making it easy to monitor."
+    },
+    "tp4057_type_c_charger": {
+      "description": "High-quality TP4057 1A lithium battery charging board with USB Type-C input for single-cell 3.7 V Li-ion batteries. Supports up to 1 A charge current, constant current/voltage charging with built-in protections (over-temperature, polarity protection, soft start), and LED status indicators — ideal for Arduino and DIY battery-powered projects.   The TP4057 1A 3.7V Lithium Battery Charging Board is a compact and robust charger designed for single-cell lithium-ion or lithium-polymer batteries (such as 18650 or similar). It uses the advanced TP4057 charging chip, offering a constant current / constant voltage charging profile with a soft-start function and built-in protection mechanisms to help extend battery life and improve safety during charging. Featuring a modern USB Type-C input, this module enables easy connection to common USB power sources (phone chargers, power banks, USB adapters) and supports up to 1 A charging current. It also includes multiple protection features — such as over-temperature protection, reverse connection protection, and overcharge/shutdown safeguards — which make it more reliable and safer than standard TP4056-based boards. "
+    },
+    "6ch_jst_lipo_charger": {
+      "description": "This 6-channel 1S LiPo battery charger is designed for safe and efficient charging of 3.7V Li-ion and LiPo battery packs. Powered via USB, it supports simultaneous charging of up to six batteries, making it ideal for FPV drones, Tiny Whoop models, and small electronics projects. The charger features JST-PH 2.0mm and Micro JST 1.25mm connectors, ensuring broad compatibility with popular micro drone batteries and compact 18650-based battery packs with JST connectors. Each channel operates independently and is equipped with LED indicators to display charging status in real time."
+    },
+    "dual_jst_lipo_charger": {
+      "description": "Charge your 3.7V LiPo batteries conveniently using these compact USB chargers. Each charger comes with a JST SM-2P connector, making it compatible with most RC vehicles like stunt cars, boats, and trucks. Just plug into a USB port and connect to the battery — safe, lightweight, and portable. Perfect for hobbyists, beginners, or anyone needing quick on-the-go charging."
+    },
+    "skyrc_b6neo_charger": {
+      "description": "The SKYRC B6Neo is a powerful and compact smart battery charger designed for RC hobbyists and electronics enthusiasts. Supporting a wide range of battery chemistries and cell counts, it delivers up to 200W of DC power or 80W via USB-C PD, making it ideal for both home and portable use.With advanced balance charging, accurate voltage control, and multiple safety protections, the B6Neo ensures safe and efficient charging for LiPo, Li-Ion, LiHV, NiMH, and NiCd batteries. The built-in discharge and storage modes help extend battery lifespan, while the clear LCD display provides real-time charging data.Perfect for RC cars, drones, boats, airplanes, and DIY electronics projects."
+    },
+    "dual_400w_balance_charger": {
+      "description": "The M6DAC Pro is a next-generation smart battery charger that elevates a classic design with modern power and intelligence. Delivering up to 800W of total output power and 16A per channel, it features dual independent outputs with smart power distribution for efficient multi-battery charging. Supporting an exceptionally wide range of battery chemistries—including LiPo, LiHV, LiFe, Li-ion, LTO, NiMH, and NiCd—the M6DAC Pro is engineered for RC professionals and advanced hobbyists. The newly added wireless charging capability and continued 65W Super Flash Charger make it a versatile solution for both batteries and compatible devices. A 2.8-inch IPS LCD, dynamic light strip, and intelligent cooling system provide a premium user experience, while comprehensive safety protections ensure reliable and secure operation."
+    },
+    "1200w_dual_balance_charger": {
+      "description": "The M8DAC is a powerful and intelligent dual-output battery charger designed for advanced RC users and professionals. Supporting 1–8S LiPo and LiHV batteries, it offers full charge, storage, and discharge functions with precise control and high efficiency. Equipped with dual independent outputs and smart power distribution, the M8DAC optimizes power delivery automatically when charging multiple batteries. The all-new user interface is displayed on a 2.8-inch IPS LCD, providing a clear, intuitive view of real-time charging data while remaining simple and easy to operate. Despite its high performance, the M8DAC features an extremely compact design with an integrated carrying handle, making it ideal for both workshop and field use. A dynamic light strip visually indicates charging status at a glance, while the advanced automatic cooling system adjusts fan speed in real time based on thermal demand to ensure stable and quiet operation."
+    },
+    "nimh_usbc_smart_charger": {
+      "description": "The UN3 is an ultra-compact and highly efficient battery charger designed for everyday RC use and RTR vehicles. Equipped with the widely adopted USB-C input port, it allows you to start charging instantly using a single fast-charging adapter already available in most homes. Supporting multiple fast-charging protocols—PD, QC, AFC, and SCP—the UN3 intelligently adapts to the connected power source to ensure stable and efficient performance. Despite its extremely small size and lightweight design of just 50 grams, it delivers reliable charging power, making it ideal for portable and field use. The charger comes standard with a Tamiya charging connector, ensuring broad compatibility with popular RTR RC vehicles straight out of the box. Its excellent balance between size, performance, and price makes the UN3 a practical and cost-effective choice for beginners and hobbyists alike."
+    },
+    "1600w_touch_balance_charger": {
+      "description": "The M8D is a high-performance dual-channel smart battery charger engineered for professional RC users who demand maximum power, precision control, and advanced safety features. Designed with a new touch-optimized user interface, it delivers an intuitive operating experience aligned with modern touch-screen usage habits.  Featuring an extra-large 3.5″ IPS flip screen with an adjustable viewing angle up to 80°, the M8D ensures excellent visibility in any working environment. Its dual independent 8S output channels provide an impressive total output power of up to 1600W, while synchronized mode enables ultra-high current charging of up to 50A, making it ideal for large-capacity and high-demand battery packs. In addition to its charging capabilities, the M8D includes a 65W fast charging output for external devices and a dedicated battery destruction function, allowing for safe and controlled disposal of end-of-life batteries."
+    },
+    "xl4016_buck_converter": {
+      "description": "The HiLetgo XL4016 DC-DC Buck Converter Module is a high-power, high-efficiency step-down power supply designed for demanding electronics and DIY applications. Based on the XL4016E1 PWM control chip, this module efficiently converts input voltages from 4–40V DC down to a stable, adjustable output of 1.25–36V DC. Capable of delivering up to 8A output current and 200W of power (with adequate cooling), the XL4016 module is ideal for use in battery charging systems, adjustable power supplies, LED drivers, Arduino projects, robotics, and industrial control circuits. The onboard potentiometer allows precise voltage adjustment, while the large heatsink improves thermal performance during high-load operation. Supplied as a 2-piece set, this module offers excellent performance, reliability, and cost-effectiveness for engineers, makers, and hobbyists."
+    },
+    "lm2596_buck_voltmeter": {
+      "description": "The LM2596 DC-DC Buck Converter Module is a versatile and compact adjustable step-down power supply module. Designed for both hobbyists and electronics professionals, it converts input voltages from 4–40V DC down to a stable and adjustable output between 1.25–37V DC, efficiently powering a wide variety of projects.  Each module features a built-in LED voltmeter display for real-time monitoring of output voltage, allowing precise adjustments via the onboard potentiometer. With a maximum output current of 3A and efficiency up to 92%, these modules are ideal for battery chargers, LED drivers, Arduino/Raspberry Pi projects, robotics, and custom electronics applications. Supplied as a 2-piece pack, the LM2596 modules offer reliable, cost-effective, and easy-to-use voltage regulation for makers, engineers, and electronics enthusiasts."
+    },
+    "drok_384w_buck_converter": {
+      "description": "The DROK DC Buck Converter is a high-power, adjustable step-down voltage regulator designed for professional and DIY applications. With an input range of 5.3V–32V and an adjustable output of 1.2V–32V, it provides precise voltage control for a variety of DC devices and systems. Equipped with a 12A maximum output and CC/CV modes, this module can reliably supply constant current or constant voltage depending on your application. The built-in LCD display allows real-time monitoring of both output voltage and current, making adjustments intuitive and accurate. This versatile converter is perfect for RV solar panel setups, golf carts, battery charging, LED lighting, automotive electronics, and DIY projects. With multiple voltage presets (5V, 9V, 12V, 24V, 30V, 32V), it can quickly adapt to common devices while providing safety through over-current, over-voltage, over-temperature, and short-circuit protection."
+    },
+    "xl6009_boost_converter": {
+      "description": "The HiLetgo XL6009 Boost Converter Module is a compact and high-efficiency DC-DC step-up power supply designed for hobbyists, engineers, and makers. With an input range of 3–30V and an adjustable output of 5–35V, this module can efficiently raise lower voltages to higher levels, powering devices and circuits that require more voltage than your source provides. Equipped with the XL6009 PWM chip, it provides high-efficiency conversion up to 94%, stable output voltage, and smooth performance even under varying loads. The onboard potentiometer allows for easy voltage adjustment, while the compact design fits neatly into DIY projects and electronics setups. Supplied as a 5-piece set, these modules are perfect for LED drivers, battery chargers, Arduino and Raspberry Pi projects, robotics, and hobbyist electronics, offering reliable, adjustable step-up voltage in a small and versatile package."
+    },
+    "xh_m411_boost_converter": {
+      "description": "The XH-M411 DC Boost Converter Module is a versatile and reliable step-up voltage regulator designed for electronics enthusiasts, professionals, and DIY makers. With an input voltage range of 3–35V and an adjustable output of 5–45V, this module is ideal for powering devices that require higher voltage than the source provides. Equipped with screw terminals, the XH-M411 allows for easy and secure wire connections. Its LED display shows either input or output voltage, and a simple button allows toggling between them. The manual potentiometer makes precise output voltage adjustment convenient and practical. The module supports large current output, including USB 2.5A, allowing simultaneous charging of multiple smartphones. With a heatsink for efficient cooling, it remains stable under high load. Additionally, it can serve as a power supply for laptops or a voltage regulator for solar panels, making it highly versatile for a variety of applications."
+    },
+      "common": {
+        "outputCurrent": "output Current",
+        "operatingTemperature": "operating Temperature",
+        "operatingVoltage": "Operating Voltage",
+        "dcCurrent": "DC Current",
+        "inputVoltageRange": "Input Voltage Range",
+        "outputVoltage": "Output Voltage",
+        "outputVoltageRange": "Output Voltage Range",
+        "inputPowerDC": "Input Power (DC)",
+        "inputPowerUSBPD": "Input Power (USB-C PD)",
+        "outputPower": "Output Power",
+        "chargingPower": "Charging Power",
+        "dischargingPower": "Discharging Power",
+        "maxOutputPower": "Max Output Power",
+        "maxOutputCurrent": "Max Output Current",
+        "balanceCurrent": "Balance Current",
+        "voltageRegulation": "Voltage Regulation",
+        "controlMode": "Control Mode",
+        "switchingFrequency": "Switching Frequency",
+        "efficiency": "Efficiency",
+        "boostOutput": "Boost Output (Step-Up)",
+        "typeCOutput": "Type-C Output",
+        "usbProtocols": "USB Protocols",
+        "wirelessPower": "Wireless Power",
+        "coolingSystem": "Cooling System",
+        "cooling": "Cooling",
+        "internalResistance": "Internal Resistance",
+        "balanceAccuracy": "Balance Accuracy",
+    
+        "chargingInput": "Charging Input",
+        "chargingCurrent": "Charging Current",
+        "chargingVoltage": "Charging Voltage",
+        "chargeTerminationVoltage": "Charge Termination Voltage",
+        "chargingChannels": "Charging Channels",
+        "chargingInterface": "Charging Interface",
+        "chargingMethod": "Charging Method",
+        "batteryProtection": "Battery Protection",
+        "batteryOvercurrentProtection": "Battery Overcurrent Protection",
+        "batteryCompatibility": "Battery Compatibility",
+        "batteryTypesSupported": "Battery Types Supported",
+        "lipoCells": "LiPo / Li-Ion / LiHV Cells",
+        "nimhCells": "NiMH / NiCd Cells",
+        "balanceCharging": "Balance Charging",
+        "protections": "Protections",
+        "protectionFunctions": "Protection Functions",
+        "protectionFeatures": "Protection Features",
+        "lowVoltageActivation": "Low Voltage Activation",
+        "smartFeatures": "Smart Features",
+        "functions": "Functions",
+    
+        "controller": "Controller",
+        "coreChip": "Core Chip",
+        "driverIC": "Driver IC",
+        "interface": "Interface",
+        "controlInterface": "Control Interface",
+        "display": "Display",
+        "displayType": "Display Type",
+        "displaySize": "Display Size",
+        "touchPanel": "Touch Panel",
+        "touchType": "Touch Type",
+        "operatingButtons": "Operating Buttons",
+        "indicators": "Indicators",
+        "brightness": "Brightness",
+        "contrast": "Contrast",
+        "backlight": "Backlight",
+        "resolution": "Resolution",
+    
+        "productType": "Product Type",
+        "moduleType": "Module Type",
+        "application": "Application",
+        "connectivity": "Connectivity",
+        "connectorsSupported": "Connectors Supported",
+        "connectorType": "Connector Type",
+        "outputConnectors": "Output Connectors",
+        "terminals": "Terminals",
+        "quantity": "Quantity",
+        "brand": "Brand",
+        "model": "Model",
+        "material": "Material",
+    
+        "dimensions": "Dimensions",
+        "productDimensions": "Product Dimensions",
+        "packageDimensions": "Package Dimensions",
+        "pcbSize": "PCB Size",
+        "weight": "Weight",
+        "productWeight": "Product Weight",
+        "packageWeight": "Package Weight",
+
+        "functionality": "functionality",
+        "voltageCutoffs": "voltageCutoffs",
+        "compatibility": "compatibility",
+        "color": "color",
+        "inputVoltageDC": "input Voltage DC",
+        "maxChargeCurrent": "max Charge Current",
+        "maxDischargePower": "max Discharge Power",
+        "firmwareUpgrade" : "firmware Upgrade",
+        "inputVoltageAC": "input VoltageAC",
+        "powerOutput": "power Output",
+        "outputCableLength": "output CableLength",
+        "regulationMode": "regulation Mode",
+        "voltagePresets": "voltage Presets",
+        "voltageDisplay": "voltage Display",
+        "adjustmentMethod": "adjustment Method"
+      }
+  },
+  "sensorModules":{
+    "dht11_temperature_humidity":{
+      "description": "The Gowoops DHT22 / AM2302 Digital Temperature and Humidity Sensor Module (2pcs) is a high-accuracy, digital sensor designed for reliable environmental monitoring in electronics and DIY projects. It measures ambient temperature and relative humidity with improved precision and stability compared to older sensors such as SHT11 and SHT15, making it an excellent replacement. This module features a fully calibrated digital output, allowing easy integration with Arduino, Raspberry Pi, ESP8266, ESP32, and other microcontroller platforms. Thanks to its single-wire data interface, setup is simple and requires minimal wiring. The sensor is well-suited for both beginners learning electronics and advanced users building monitoring systems."
+    },
+    "dht22_temperature_humidity":{
+      "description": "This Gowoops 2-pack of DHT22 (also known as AM2302) sensors is a popular choice for hobbyists and engineers who need reliable, low-cost climate monitoring. Compared to the basic DHT11, the DHT22 offers higher precision and a wider measurement range."
+    },
+    "hiletgo_temperature": {
+      "description":"A pre-assembled module featuring the AM2302 sensor on a small PCB. It provides a calibrated digital signal output, ensuring high reliability and stability. It includes a built-in pull-up resistor, making it ready to connect directly to a microcontroller."
+    },
+    "lm35dz_temperature":{
+      "description": "The Bridgold LM35DZ is a high-precision, analog temperature sensor integrated circuit. Unlike the DHT22 (which is digital), the LM35DZ outputs a simple voltage that varies linearly with the temperature, making it incredibly easy to use with any microcontroller that has an Analog-to-Digital Converter (ADC)."
+    },
+    "bme280_sensor":{
+      "description": "The BME280 is a highly versatile, all-in-one environmental sensor developed by Bosch Sensortec. It is a significant upgrade over the older BMP180 and the similar BMP280, as it adds a humidity sensor to the existing temperature and pressure sensing capabilities"
+    },
+    "bmp180_sensor": {
+      "description": "The HiLetgo BMP180 (GY-68) is a high-precision, digital barometric pressure sensor module. It is the direct successor to the older BMP085 and is widely used for weather monitoring and altitude tracking in hobbyist electronics."
+    },
+    "gy63_ms5611_sensor": {
+      "description": "The HiLetgo GY-63 is a high-precision atmospheric pressure sensor module based on the MS5611-01BA03 chip. It is widely used in drone flight controllers, weather stations, and altitude trackers because of its incredible resolution—it can detect an altitude change as small as 10 cm"
+    },
+    "mq135_gas_sensor":{
+      "description": "The MQ-135 is a popular, low-cost semiconductor sensor used for Air Quality Monitoring. It is designed to detect a wide range of gases, specifically targeting common indoor air pollutants and harmful gases."
+    },
+    "max9814_microphone":{
+      "description":"The MAX9814 Electret Microphone Amplifier is a high-performance audio module featuring Automatic Gain Control (AGC). Unlike standard microphone modules that can clip or distort when sounds get too loud, the MAX9814 dynamically adjusts its amplification: it boosts quiet, far-away sounds and reduces the volume of nearby loud sounds to keep the signal clear."
+    },
+    "green_led_matrix":{
+      "description":"The KWM-20882CPGB (Adafruit ID: 1624) is a bite-sized 8x8 miniature LED matrix featuring 64 pure green LEDs. At only 0.8 inches square, it is ideal for compact wearable projects, small sensor readouts, or any application where space is at a premium."
+    },
+    "photoresistor":{
+      "description": "The EBOOT 30 Pieces Photoresistor (5539) set is a bulk pack of Light Dependent Resistors (LDRs) designed for light detection in electronic circuits. The 5539 designation refers to the specific resistance characteristics of the sensor, which is part of the standard GL55 series. Unlike the more common 5516 or 5528 models, the 5539 has a higher light resistance, making it better suited for projects where you need to detect subtle changes in brighter environments or where high circuit impedance is required."
+    },
+    "gy31_tcs3200_colorsensor": {
+      "description": "The D-FLIFE GY-31 is a high-performance color recognition sensor based on the TCS3200 chip. It is essentially a programmable color light-to-frequency converter. This module is ideal for sorting objects by color, color matching, or creating robotic eyes that can distinguish between different surfaces."
+    },
+    "tsl2561_lightsensor":{
+      "description": "The NOYITO TSL2561 is a high-precision digital luminosity (light) sensor. While simpler sensors like LDRs (Photoresistors) just tell you if it's bright or dark, the TSL2561 can calculate exact Lux values, which is the standard unit for measuring light as the human eye perceives it."
+    },
+    "ultrasonic_sensor": {
+      "description": "If you're like me, you've dreamed of being a dolphin - smoothly gliding through the water. Using your echo-location abilities to detect tasty fish treats. Until genetic modifications catches up with our desires, we'll just have to make do with these handy 3V Ultrasonic Sonar Distance Sensor and a pair of flippers. These ubiquitous sensors are really common in robotics projects, but they can also be used for automation, interactive art and motion sensing. They work at about 2cm to 450cm away, but we think 10cm-250cm will get you the best results."
+    },
+    "pir_motion_sensor":{
+      "description": "The HC-SR501 is the most widely used Passive Infrared (PIR) sensor for DIY electronics. It allows you to detect motion, specifically the movement of a human or animal, by measuring changes in the infrared levels emitted by surrounding objects. Since you have a 3-piece pack, these are perfect for building a multi-room security system or automated lighting for a hallway."
+    },
+    "rcwl0516_radar_sensor":{
+      "description": "The RCWL-0516 is a Doppler Radar motion sensor that serves as a powerful, modern alternative to the PIR (Passive Infrared) sensors you've likely seen before. While PIR sensors detect heat, this sensor emits low-power microwaves to detect the movement of any object—even through walls."
+    },
+    "adxl375_accelerometer":{
+      "description":"Hey rocket man (burnin' out your fuse out there alone) ever wonder how fast you're rocketing? The Adafruit ADXL375 High G Accelerometer is an epic +-200g 3-axis accelerometer may be able to tell the answer  You read that right, this accelerometer can sense up to 200 g's of force in three axes of measurements (X Y Z) has and pins that can be used either as I2C or SPI digital interfacing. for easy integration into any fast project. Built-in motion detection features make shock detection easy to implement. There's two interrupt pins, and you can map any of the interrupts independently to either of them. Incredible! Not surprisingly, we couldn't say no to a breakout for this sensor."
+    },
+    "mx9814_microphone":{
+      "description":"Add an ear to your project with this well-designed electret microphone amplifier with AGC. This fully assembled and tested board comes with a 20-20KHz electret microphone soldered on. For the amplification, we use the Maxim MAX9814, a specialty chip that is designed for amplifying electret microphones in situations where the loudness of the audio isn't predictable. This fancy microphone amplifier module is a step above the rest, with built-in automatic gain control. The AGC in the amplifier means that nearby 'loud' sounds will be quieted so they don't overwhelm & 'clip' the amplifier, and even quiet, far-away sounds will be amplified. This amplifier is great for when you want to record or detect audio in a setting where levels change and you don't want to have to tweak the amplifier gain all the time."
+    },
+    "max4466_microphone":{
+      "description": "Add an ear to your project with this well-designed electret microphone amplifier. This fully assembled and tested board comes with a 20-20KHz electret microphone soldered on. For the amplification, we use the Maxim MAX4466, an op-amp specifically designed for this delicate task! The amplifier has excellent power supply noise rejection, so this amplifier sounds really good and isn't nearly as noisy or scratchy as other mic amp breakouts we've tried! This breakout is best used for projects such as voice changers, audio recording/sampling, and audio-reactive projects that use FFT. On the back, we include a small trimmer pot to adjust the gain. You can set the gain from 25x to 125x. That's down to be about 200mVpp (for normal speaking volume about 6 away) which is good for attaching to something that expects 'line level' input without clipping, or up to about 1Vpp, ideal for reading from a microcontroller ADC. The output is rail-to-rail so if the sounds get loud, the output can go up to 5Vpp!"
+    },
+    "lcd_backpack": {
+      "description": "By using simple I2C and SPI input/output expanders, we have reduced the number of pins while still making it easy to interface with the LCD. Only 2 pins are needed for I2C, 3 for SPI. For Arduino and CircuitPython/Python users, we provide an easy-to-use library that is backwards compatible with projects using the '6 pin' wiring. This backpack comes with pre-soldered 2-pin and 3-pin terminal block to make a 5-pin terminal for easy wiring."
+    },
+    "tft_lcd_display":{
+      "description": "The GODIYMODULES 2.4 SPI TFT LCD is a vibrant, high-resolution display module that is a staple in the DIY electronics world. Because it uses the ILI9341 driver, it is compatible with almost every major microcontroller platform, including Arduino, ESP32, Raspberry Pi Pico, and STM32."
+    },
+    "tm1637_led_display":{
+      "description":"The DIYables 4-Digit 7-Segment TM1637 module is one of the most convenient ways to add a numeric display to your projects. Because it uses the TM1637 driver chip, it only requires two signal wires (plus power) to control all four digits, whereas a raw 7-segment display would require 12 or more pins."
+    },
+    "led_matrix":{
+      "description": "You will squeak with delight when you hold this adorable miniature LED 8x8 matrix. 0.8 square, it's got everything a big LED matrix has, but bite-sized! There are 16 pins on the side, 8 on each, with 0.1 spacing so you can easily plug it into a breadboard with plenty of space to wire it up"
+    },
+    "blue_led_matrix":{
+      "description":"You will squeak with delight when you hold this adorable miniature LED matrix. 0.8 square, its got everything a big LED matrix has, but bite sized! 64 bright blue LEDs are contained inside the plastic body, in an 8x8 matrix. There are 16 pins on the side, 8 on each, with 0.1 spacing so you can easily plug it into a breadboard with plenty of space to wire it up"
+    },
+    "yellow_led_matrix":{
+      "description":"You will squeak with delight when you hold this adorable miniature LED matrix. 0.8 square, it's got everything a big LED matrix has, but bite sized! 64 bright yellow LEDs are contained inside the plastic body, in an 8x8 matrix. There are 16 pins on the side, 8 on each, with 0.1 spacing so you can easily plug it into a breadboard with plenty of space to wire it up."
+    },
+    "yellowgreen_led_matrix": {
+      "description": "You will squeak with delight when you hold this adorable miniature LED matrix. 0.8 square, its got everything a big LED matrix has, but bite sized! 64 bright yellow-green LEDs are contained inside the plastic body, in an 8x8 matrix. There are 16 pins on the side, 8 on each, with 0.1 spacing so you can easily plug it into a breadboard with plenty of space to wire it up"
+    },
+    "white_led_matrix": {
+      "description":"You will squeak with delight when you hold this adorable miniature LED matrix. 0.8 square, its got everything a big LED matrix has, but bite-sized! 64 bright white LEDs are contained inside the plastic body, in an 8x8 matrix. There are 16 pins on the side, 8 on each, with 0.1 spacing so you can easily plug it into a breadboard with plenty of space to wire it up"
+    },
+      "common": {
+        "brand": "Brand",
+        "model": "Model",
+        "type": "Type",
+        "quantity": "Quantity",
+        "color": "Color",
+        "size": "Size",
+        "dimensions": "Dimensions",
+        "weight": "Weight",
+        "voltage": "Voltage",
+        "current": "Current",
+        "powerSource": "Power Source",
+        "compatibility": "Compatibility",
+        "manufacturer": "Manufacturer",
+        "packageSize": "Package Size",
+        "asin": "ASIN",
+        "itemNumber": "Item Number",
+        "releaseDate": "Release Date",
+        "discontinued": "Discontinued",
+        "upc": "UPC",
+        "material": "Material",
+        "mounting": "Mounting",
+        "connector": "Connector",
+        "contacts": "Contacts",
+        "poles": "Poles",
+        "maxTemp": "Max Temperature",
+        "tempRange": "Temperature Range",
+        "accuracy": "Accuracy",
+        "range": "Range",
+        "outputType": "Output Type",
+        "interfaces": "Interfaces",
+        "resolution": "Resolution",
+        "frequency": "Frequency",
+        "maxDistance": "Max Distance",
+        "maxRange": "Max Range",
+        "blindSpot": "Blind Spot",
+        "error": "Error",
+        "detectionAngle": "Detection Angle",
+        "cycleTime": "Cycle Time",
+        "bandwidth": "Bandwidth",
+        "i2cAddress": "I2C Address",
+        "shockSurvival": "Shock Survival",
+        "boardSize": "Board Size",
+        "pcbThickness": "PCB Thickness",
+        "totalHeight": "Total Height",
+        "micType": "Microphone Type",
+        "feature": "Feature",
+        "addressSelection": "Address Selection",
+        "note": "Note",
+        "driver": "Driver",
+        "interface": "Interface",
+        "os": "OS",
+        "processorBrand": "Processor Brand",
+        "processors": "Processors",
+        "digits": "Digits",
+        "displayType": "Display Type",
+        "use": "Use",
+        "polarity": "Polarity",
+        "pinLength": "Pin Length",
+        "technology": "Technology",
+        "replaces": "Replaces",
+        "intelligence": "Intelligence",
+        "function": "Function",
+        "specification": "Specification",
+        "diameter": "Diameter",
+        "detection": "Detection",
+        "chip": "Chip",
+        "mainChip": "Main Chip",
+        "operatingVoltage": "Operating Voltage",
+        "maxVoltage": "Max Voltage",
+        "tempMeasurementAccuracy": "Temperature Accuracy",
+        "humidityMeasuringRange": "Humidity Range",
+        "humidityMeasurementAccuracy": "Humidity Accuracy",
+        "screwHole": "Screw Hole Diameter",
+        "application": "Application",
+        "certification": "Certification",
+        "maxTempRating": "Max Temperature Rating",
+        "itemWeight": "Item Weight",
+        "dateFirstAvailable": "Date First Available",
+        "partNumber": "Part Number",
+        "batteries": "Batteries",
+        "finishType": "Finish Type",
+        "boardType": "Board Type",
+        "features": "Features",
+        "sensorType": "Sensor Type",
+        "numberOfContacts": "Number of Contacts",
+        "mountingType": "Mounting Type",
+        "upperTemperatureRating": "Upper Temperature Rating",
+        "productDimensions": "Product Dimensions",
+        "itemModelNumber": "Item Model Number",
+        "isDiscontinuedByManufacturer": "Is Discontinued By Manufacturer",
+        "packageDimensions": "Package Dimensions",
+        "operatingSystem": "Operating System",
+        "itemDimensions": "Item Dimensions",
+        "series": "Series",
+        "operateVoltage": "Operate Voltage",
+        "measurementAccuracy": "Measurement Accuracy",
+        "measuringRange": "Measuring Range",
+        "screwHoleDiameter": "Screw Hole Diameter",
+        "replacementFor": "Replacement For",
+        "powerSupply": "Power Supply",
+        "maximumRange": "Maximum Range",
+        "recommendedUses": "Recommended Uses",
+        "batteriesIncluded": "Batteries Included",
+        "batteriesRequired": "Batteries Required",
+        "descriptionPile": "Description",
+        "currentRating": "Current Rating",
+        "maximumSupplyVoltage": "Maximum Supply Voltage",
+        "productWeight": "Product Weight",
+        "mainChipModel": "Main Chip Model",
+        "maxDetectionDistance": "Max Detection Distance",
+        "detectionAccuracy": "Detection Accuracy",
+        "outputInterfaceMode": "Output Interface Mode",
+        "operatingTemperature": "Operating Temperature",
+        "aluminumShellProbe": "Aluminum Shell Probe",
+        "shockEventDetection": "Shock Event Detection",
+        "activityInactivityMonitoring": "Activity/Inactivity Monitoring",
+        "spiWires": "SPI Wires",
+        "microphoneType": "Microphone Type",
+        "autoGainControl": "Auto Gain Control",
+        "adjustableGain": "Adjustable Gain",
+        "characterLCDs": "Character LCDs",
+        "notForOLED": "Not For OLED",
+        "tutorialsProvided": "Tutorials Provided",
+        "commonCathode": "Common Cathode",
+        "ultraBright": "Ultra-Bright",
+        "pinLengthMm": "Pin Length (mm)",
+        "pureGreen": "Pure Green",
+        "tempAccuracy": "temp Accuracy",
+        "humidityRange": "humidity Range",
+        "humidityAccuracy": "humidity Accuracy",
+        "style": "style"
+      }
+
+    
+    
+  },
+  "connectivity":{
+    "esp8266_esp01_wifi":{
+      "description":"The HiLetgo ESP8266 ESP-01 is a compact, low-cost WiFi transceiver module that has become a staple for IoT (Internet of Things) projects. It allows microcontrollers like an Arduino to connect to a WiFi network or can even act as a standalone mini-computer thanks to its built-in processor."
+    },
+    "esp8266_esp12f":{
+      "description":"Add Internet to your next project with an adorable, bite-sized WiFi microcontroller, at a price you like! The ESP8266 processor from Espressif is an 80 MHz microcontroller with a full WiFi front-end (both as client and access point) and TCP/IP stack with DNS support as well.  We do sell these on a breakout, but maybe you wanna just put this in your own project PCB."
+    },
+    "huzzah_esp8266_breakout":{
+      "description":"Add Internet to your next project with an adorable, bite-sized WiFi microcontroller, at a price you like! The ESP8266 processor from Espressif is an 80 MHz microcontroller with a full WiFi front-end (both as client and access point) and TCP/IP stack with DNS support as well. While this chip has been very popular, its also been very difficult to use. Most of the low cost modules are not breadboard friendly, don't have an onboard 500mA 3.3V regulator or level shifting, and aren't CE or FCC emitter certified....UNTIL NOW!"
+    },
+    "esp32_dev_board":{
+      "description":"The ESP8266 started a small revolution by bringing WiFi to a small and cheap package that also had enough processing power and enough pins to get small things done. Now get ready to take your bite-sized WiFi capabilities to the next level with the ESP32 Development Board!"
+    },
+    "hc05_bluetooth":{
+      "description":"The DSD TECH HC-05 is a classic Bluetooth 2.0 serial pass-through module. It acts as a wireless bridge: it receives data wirelessly via Bluetooth and spits it out through a serial (UART) connection to your Arduino, or vice versa. The Button on this specific DSD TECH version is a major convenience feature—it allows you to enter AT Command Mode without needing complex wiring for the Key pin."
+    },
+    "jdy31_bluetooth":{
+      "description":"The Rakstore JDY-31 is a high-performance, low-power Bluetooth 3.0 SPP (Serial Port Profile) module. While it is marketed as a replacement for the classic HC-05 and HC-06, it is actually a more modern upgrade with significantly better range and lower power consumption. The 2-piece pack allows you to create a wireless link between two devices or have a spare for multiple projects."
+    },
+    "433mhz_rf_kit":{
+      "description":"The 433MHz Transmitter and Receiver Kit is a staple for low-cost, short-range wireless communication in the DIY electronics world. This Super Regenerative kit is designed for simple data transmission between microcontrollers like Arduino, Raspberry Pi, or ARM-based systems. Since you have a 3-set pack, you can set up multiple transmission nodes (e.g., three different sensors) reporting back to one or more receivers."
+    },
+    "nrf24l01_transceiver":{
+      "description": "The HiLetgo NRF24L01+PA+LNA is a high-power wireless transceiver designed for long-distance data communication. While standard nRF24L01+ modules are great for short distances, this version includes a Power Amplifier (PA) and a Low-Noise Amplifier (LNA) to push signals up to 1,100 meters"
+    },
+    "sx1278_lora":{
+      "description":" LoRa spread-spectrum communication, super anti-interference performance -- The module adopts LORA spread spectrum technology, transmitting distance and anti-interference performance are one time more than FSK"
+    },
+    "rc522_rfid_reader":{
+      "description":"The RF IC Card module design the circuit of card read by using the original Philips MFRC522 chip Easy to use, with pin header. The module can be directly loaded into the various reader molds. Applicable for the user who need to design or manufacture the RF card terminal. Module Interface: SPI, Data transfer rate: Maximum 10Mbit/s."
+    },
+      "common": {
+        "brand": "Brand",
+        "model": "Model",
+        "type": "Type",
+        "quantity": "Quantity",
+        "dimensions": "Dimensions",
+        "weight": "Weight",
+        "voltage": "Voltage",
+        "current": "Current",
+        "compatibility": "Compatibility",
+        "manufacturer": "Manufacturer",
+        "packageSize": "Package Size",
+        "asin": "ASIN",
+        "itemNumber": "Item Number",
+        "releaseDate": "Release Date",
+        "discontinued": "Discontinued",
+        "frequency": "Frequency",
+        "range": "Range",
+        "interface": "Interface",
+        "dataRate": "Data Rate",
+        "baudRate": "Baud Rate",
+        "power": "Power",
+        "sensitivity": "Sensitivity",
+        "antenna": "Antenna",
+        "technology": "Technology",
+        "size": "Size",
+        "buffer": "Buffer",
+        "packageIncludes": "Package Includes",
+        "applications": "Applications",
+        "standard": "Standard",
+        "included": "Included",
+        "os": "OS",
+        "operatingCurrent": "Operating Current",
+        "idleCurrent": "Idle Current",
+        "sleepCurrent": "Sleep Current",
+        "peakCurrent": "Peak Current",
+        "readRange": "Read Range",
+        "operatingTemp": "Operating Temperature",
+        "storageTemp": "Storage Temperature",
+        "humidity": "Humidity",
+        "supportedCards": "Supported Cards",
+        "buttons": "Buttons",
+        "led": "LED",
+        "regulator": "Regulator",
+        "maxCurrent": "Max Current",
+        "powerInputs": "Power Inputs",
+        "analogInputs": "Analog Inputs",
+        "gpio": "GPIO",
+        "protocols": "Protocols",
+        "uartPins": "UART Pins",
+        "powerInputsVoltage": "Power Inputs Voltage",
+        "controlPins": "Control Pins",
+        "outputVoltage": "Output Voltage",
+        "chip": "Chip",
+        "microcontroller": "Microcontroller",
+        "wifiModes": "WiFi Modes",
+        "packageType": "Package Type",
+        "function": "Function",
+        "feature": "Feature",
+        "communication": "Communication",
+        "freqRange": "Frequency Range",
+        "transmitPower": "Transmit Power",
+        "receiveSensitivity": "Receive Sensitivity",
+        "transmissionDistance": "Transmission Distance",
+        "masterSlave": "Master/Slave",
+        "throughput": "Throughput",
+        "tempRange": "Temperature Range",
+        "channels": "Channels",
+        "dataChannels": "Data Channels",
+        "ic": "IC",
+        "testDistance": "Test Distance",
+        "features": "Features",
+        "powerSource": "Power Source",
+        "maxVoltage": "Max Voltage",
+        "inputPower": "Input Power",
+        "ioVoltage": "I/O Voltage",
+        "flashMemory": "Flash Memory",
+        "wifiSecurity": "WiFi Security",
+        "modes": "Modes",
+        "bluetoothVersion": "Bluetooth Version",
+        "replaces": "Replaces",
+        "connectedCurrent": "Connected Current",
+        "operatingVoltage": "Operating Voltage",
+        "usbAdapter": "USB Adapter",
+        "powerRegulator": "Power Regulator",
+        "cpu": "CPU",
+        "peripherals": "Peripherals"
+      }
+  }
+}
