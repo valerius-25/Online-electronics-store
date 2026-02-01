@@ -51,6 +51,6 @@ All UI styling is implemented using Tailwind CSS utility classes.
 The API URL is configured via environment variables:
 
 ## instructions
-1. install dependencies: npm i
-3. start the fake backend npx json-server --watch db.json --port 3000
-4. start the front-end npm run dev
+1. install dependencies: ` npm i`
+3. start the fake backend ` npx json-server --watch db.json --port 3000`
+4. start the front-end npm ` run dev`
