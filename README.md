@@ -1,7 +1,7 @@
 # Online Store (React SPA)
 
 ## Description
-Single-page application built with React and Vite that simulates
+An app built using React and Vite that simulates an online electronics store.
 an online electronics store.
 
 The project is created as a portfolio demo.
