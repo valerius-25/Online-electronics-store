@@ -14,7 +14,7 @@ import AccumulatorDetails from "../../shared/AccumulatorDetails";
 import PowerDetails from "../../shared/PowerDetails"
 import SensorsModulesDetails from "../../shared/SensorsModulesDetails";
 import ConnectivityDetails from "../../shared/ConnectivityDetails";
-import Buy from "../../shared/buy";
+import Buy from "../../shared/Buy.jsx";
 import Cart from "../../shared/Cart";
 
 const MainRouter = () => {
