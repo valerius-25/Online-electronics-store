@@ -35,7 +35,7 @@ const Header = () => {
               <img src={currentLanguage.flag} alt={currentLanguage.lng} className="w-6 h-6" />
             )}
             <select
-              className="rounded px-2 bg-white text-black text-sm"
+              className="rounded px-2 bg-white text-black text-[45px] sm:text-[30px]"
               value={i18n.language}
               onChange={(e) => i18n.changeLanguage(e.target.value)}
             >
