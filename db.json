@@ -1549,9 +1549,8 @@
       ],
       "images": [
           { "id": 1, "img": "https://static.cytron.io/image/cache/catalog/products/SN-DHT11-MOD/SN-DHT11-MOD%20(a)-800x800.jpg" },
-          { "id": 2, "img": "https://m.media-amazon.com/images/I/61b9t9XHKeL._SX522_.jpg" },
-          { "id": 3, "img": "https://m.media-amazon.com/images/I/61LMBw9E+WL._SX522_.jpg" },
-          { "id": 4, "img": "https://m.media-amazon.com/images/I/71noDDRDuQL._SX522_.jpg" }
+          { "id": 2, "img": "https://static.cytron.io/image/cache/catalog/products/SN-DHT11-MOD/SN-DHT11-MOD%20(b)-800x800.jpg?_gl=1*w22ha9*_gcl_au*MTg4MTA3OTM4Ni4xNzc0Mjk1NzMz" },
+          { "id": 3, "img": "https://m.media-amazon.com/images/I/71noDDRDuQL._SX522_.jpg" }
       ]
   },
   {
