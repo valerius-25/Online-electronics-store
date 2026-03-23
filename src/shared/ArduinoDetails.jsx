@@ -35,14 +35,15 @@ function ArduinoDetails() {
 
   useEffect(() => {
     axios
-      .get(`${API_URL}/arduino/${id}`)
-      .then((res) => {
-        setProducts(res.data);
-        setCountP(res.data.price);
-        setCountT(res.data.price);
-      })
-      .catch(() => setProducts(null))
-      .finally(() => setLoding(false));
+    .get(API_URL)
+    .then((res) => {
+      const found = res.data.arduino.find((item) => item.id === Number(id));
+      setProducts(found || null);
+      setCountP(found?.price);
+      setCountT(found?.price);
+    })
+    .catch(() => setProducts(null))
+    .finally(() => setLoding(false));
   }, [id]);
 
   if (loading) {

@@ -11,10 +11,9 @@ const Slider = () => {
 
   useEffect(() => {
     axios
-      .get(`${API_URL}/slider`)
-      .then((res) => {
-        setImages(res.data);
-        setLoaded(true);
+    .get(API_URL)
+    .then((res) => {
+      setImages(res.data.slider);
       })
       .catch((err) => console.error(err));
   }, []);
@@ -33,7 +32,7 @@ const Slider = () => {
           <div key={image.id} className="each-slide w-full">
             <div
               className="w-[100%] h-[100vh] bg-cover bg-center bg-no-repeat flex items-center justify-center"
-              style={{ backgroundImage: `url(${API_URL}${image.url})` }}
+              style={{ backgroundImage: `url(${image.url})` }}
             >
               <span className="opacity-0">slide</span>
             </div>

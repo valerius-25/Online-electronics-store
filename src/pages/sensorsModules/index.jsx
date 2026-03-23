@@ -47,8 +47,8 @@ const sensorsModules = () => {
     const timer = setTimeout(() => {
       async function fetchProducts() {
         try {
-          const response = await axios.get(`${API_URL}/sensorsModules`);
-          setProduct(response.data);
+          const response = await axios.get(API_URL);
+          setProduct(response.data.sensorsModules);
         } catch (error) {
           if (error.response) {
             setError(error.response.data);

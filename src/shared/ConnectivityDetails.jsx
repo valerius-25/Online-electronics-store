@@ -17,10 +17,13 @@ function ConnectivityDetails() {
 
   useEffect(() => {
     axios
-      .get(`${API_URL}/connectivity/${id}`)
-      .then((res) => setProducts(res.data))
-      .catch(() => setProducts(null))
-      .finally(() => setLoding(false));
+    .get(API_URL)
+    .then((res) => {
+      const found = res.data.connectivity.find((item) => item.id === Number(id));
+      setProducts(found || null);
+    })
+    .catch(() => setProducts(null))
+    .finally(() => setLoding(false));
   }, [id]);
 
   if (loading) {

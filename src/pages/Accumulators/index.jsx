@@ -46,8 +46,8 @@ const Accumulators = () => {
     const timer = setTimeout(() => {
       async function products() {
         try {
-          const response = await axios.get(`${API_URL}/accumulators`);
-          setAccumulators(response.data);
+          const response = await axios.get(API_URL);
+          setAccumulators(response.data.accumulators);
           console.log(response.status);
         } catch (error) {
           if (error.response) {

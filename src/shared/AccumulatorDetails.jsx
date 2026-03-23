@@ -18,8 +18,11 @@ function AccumulatorDetails() {
 
   useEffect(() => {
     axios
-      .get(`${API_URL}/accumulators/${id}`)
-      .then((res) => setProduct(res.data))
+      .get(API_URL)
+      .then((res) => {
+        const found = res.data.accumulators.find((item) => item.id === Number(id));
+        setProduct(found || null);
+      })
       .catch(() => setProduct(null))
       .finally(() => setLoading(false));
   }, [id]);

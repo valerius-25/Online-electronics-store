@@ -59,8 +59,8 @@ const Arduino = () => {
     const timer = setTimeout(() => {
       async function fetchProducts() {
         try {
-          const response = await axios.get(`${API_URL}/arduino`);
-          setArduino(response.data);
+          const response = await axios.get(API_URL);
+          setArduino(response.data.arduino);
         } catch (err) {
           if (err.response) {
             setError(err.response.status);

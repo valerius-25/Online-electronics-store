@@ -46,8 +46,8 @@ const connectivity = () => {
     const time = setTimeout(() => {
       async function getProducts() {
         try {
-          const res = await axios.get(`${API_URL}/connectivity`);
-          setProducts(res.data);
+          const res = await axios.get(API_URL);
+          setProducts(res.data.connectivity);
         } catch (err) {
           if (err.res) {
             setError(err.res.status);

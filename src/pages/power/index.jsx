@@ -43,8 +43,8 @@ const power = () => {
     const timer = setTimeout(() => {
       async function fetchProducts() {
         try {
-          const response = await axios.get(`${API_URL}/power`);
-          setPower(response.data);
+          const response = await axios.get(API_URL);
+          setPower(response.data.power);
         } catch (error) {
           if (error.response) {
             setError(error.response.data);

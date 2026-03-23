@@ -18,10 +18,13 @@ function PowerDetails() {
 
   useEffect(() => {
     axios
-      .get(`${API_URL}/power/${id}`)
-      .then((res) => setPower(res.data))
-      .catch(() => setPower(null))
-      .finally(() => setLoding(false));
+    .get(API_URL)
+    .then((res) => {
+      const found = res.data.power.find((item) => item.id === Number(id));
+      setPower(found || null);
+    })
+    .catch(() => setPower(null))
+    .finally(() => setLoding(false));
   }, [id]);
 
   if (loading) {
