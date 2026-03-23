@@ -113,7 +113,9 @@ const power = () => {
         }`}
       >
         <header className="bg-amber-600 w-full flex justify-center items-center gap-2 p-3 flex-col">
-          <p className="text-[40px] sm:text-[25px] text-white font-bold">SKYRC & ToolkitRC</p>
+          <p className="text-[40px] sm:text-[25px] text-white font-bold">
+            SKYRC & ToolkitRC
+          </p>
           <div className="text-[40px] sm:text-[25px] text-white">
             <ImPower />
           </div>
@@ -139,15 +141,17 @@ const power = () => {
                   <p className="text-[20px] font-bold leading-tight">
                     {prod.name}
                   </p>
-                  <p className="text-sm h-[60px] overflow-hidden">
-                    {t(prod.descriptionKey).slice(0, 120)}...
+                  <div className="flex flex-col gap-1">
+                    <p className="text-sm line-clamp-3">
+                      {t(prod.descriptionKey).slice(0, 120)}...
+                    </p>
                     <Link
-                      className="font-bold text-green-600"
+                      className="font-bold text-green-600 text-sm"
                       to={`/power/${prod.id}`}
                     >
                       {t("navigation.seeMore")}
                     </Link>
-                  </p>
+                  </div>
                 </div>
 
                 <div className="text-[24px] text-blue-600 font-bold flex justify-between items-center">

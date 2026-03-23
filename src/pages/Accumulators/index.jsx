@@ -107,7 +107,9 @@ const Accumulators = () => {
         }`}
       >
         <header className="bg-gradient-to-r from-sky-950 via-blue-800 to-sky-950 w-full flex justify-center items-center gap-2 p-3 flex-col">
-          <p className="text-[40px] sm:text-[25px] text-white font-bold">EVE Energy & Samsung SDI</p>
+          <p className="text-[40px] sm:text-[25px] text-white font-bold">
+            EVE Energy & Samsung SDI
+          </p>
           <div className="text-[40px] sm:text-[25px] text-white">
             <FaCarBattery />
           </div>
@@ -132,15 +134,17 @@ const Accumulators = () => {
                   <p className="text-[20px] font-bold leading-tight">
                     {prod.name}
                   </p>
-                  <p className="text-sm h-[60px] overflow-hidden">
-                    {t(prod.descriptionKey).slice(0, 120)}...
+                  <div className="flex flex-col gap-1">
+                    <p className="text-sm line-clamp-3">
+                      {t(prod.descriptionKey).slice(0, 120)}...
+                    </p>
                     <Link
-                      className="font-bold text-green-600"
-                      to={`/accumulator/${prod.id}`}
+                      className="font-bold text-green-600 text-sm"
+                      to={`/accumulators/${prod.id}`}
                     >
                       {t("navigation.seeMore")}
                     </Link>
-                  </p>
+                  </div>
                 </div>
 
                 <div className="text-[24px] text-blue-600 font-bold flex justify-between items-center">
