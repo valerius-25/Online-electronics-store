@@ -14,8 +14,9 @@ const Slider = () => {
     .get(API_URL)
     .then((res) => {
       setImages(res.data.slider);
-      })
-      .catch((err) => console.error(err));
+      setLoaded(true);
+    })
+    .catch((err) => console.error(err));
   }, []);
 
   if (!loaded) return null;
