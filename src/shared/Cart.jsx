@@ -88,17 +88,6 @@ function cart() {
                 key={prod.cartID}
                 className="bg-white shadow-2xl rounded-[30px] w-full flex flex-col sm:flex-row justify-between p-4 gap-4"
               >
-                {/* <div className=" flex gap-3">
-                  <div>
-                    <img src={prod.images?.[0].img} className="w-24 sm:w-40" />
-                  </div>
-                  <div className="flex flex-col gap-2">
-                    <p className="text-[20px]">{prod.name}</p>
-                    <p className="text-[20px] text-green-600 font-medium">
-                      $ {prod.price}
-                    </p>
-                    <p>
-                      {t(prod.descriptionKey).slice(0, 50)} ... */}
                 <div className="flex gap-3">
                   <div className="min-w-[80px]">
                     <img
