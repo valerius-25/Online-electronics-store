@@ -44,10 +44,10 @@ const Header = () => {
               ))}
             </select>
           </div>
-          <button className="cursor-pointer text-[24px]" onClick={toggleTheme}>
+          <button className="cursor-pointer text-[24px] sm:text-[40px]" onClick={toggleTheme}>
             {dark ? <FaSun /> : <FaMoon />}
           </button>
-          <Link to="/cart" className="text-[24px]">
+          <Link to="/cart" className="text-[24px] sm:text-[40px]">
             <FaCartShopping />
           </Link>
         </div>

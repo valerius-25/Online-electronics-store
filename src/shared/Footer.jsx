@@ -6,82 +6,86 @@ import { BsTelegram } from "react-icons/bs";
 import { useTranslation } from "react-i18next";
 import { FaHome } from "react-icons/fa";
 import { SiArduino } from "react-icons/si";
+import { useTheme } from "./ThemeContext";
 
 
 const Footer = () => {
   const { t, i18n } = useTranslation();
-
-  const changeLang = (lng) => i18n.changeLanguage(lng);
+  const { dark, toggleTheme } = useTheme();
 
   return (
-    <div className="bg-gradient-to-r from-cyan-300 via-sky-700 to-cyan-300 text-white p-[10px] bg-stone-950 text-stone-50 flex flex-col items-center gap-[30px] ">
-      <div className="text-[40px] flex gap-[20px]">
-        <a target="_blank" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+    <div className={`${dark ? "bg-gradient-to-r from-black via-sky-900 to-black text-white" : "bg-gradient-to-r from-cyan-300 via-sky-700 to-cyan-300 text-white"} p-5 flex flex-col items-center gap-6`}>
+      <div className="text-[35px] sm:text-[45px] flex gap-5">
+        <a
+          target="_blank"
+          href=""
+          className="hover:scale-110 duration-200"
+        >
           <FaFacebook />
         </a>
-        <a target="_blank" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+        <a
+          target="_blank"
+          href=""
+          className="hover:scale-110 duration-200"
+        >
           <FaInstagramSquare />
         </a>
-        <a target="_blank" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+        <a
+          target="_blank"
+          href=""
+          className="hover:scale-110 duration-200"
+        >
           <BsReddit />
         </a>
-        <a target="_blank" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+        <a
+          target="_blank"
+          href=""
+          className="hover:scale-110 duration-200"
+        >
           <BsTelegram />
         </a>
       </div>
-      <div className="flex gap-6">
+
+      <div className="flex flex-wrap justify-center gap-3">
         <Link
           to="/"
-          className="flex justify-center items-center border-x-2 duration-200 hover:scale-105 active:scale-100  p-2 text-[20px] font-bold flex gap-2 items-center"
+          className="flex items-center gap-1 border-x-2 px-3 py-1 text-[14px] sm:text-[18px] font-bold hover:scale-105 active:scale-100 duration-200"
         >
           {t("navigation.home")} <FaHome />
         </Link>
         <Link
           to="/arduino"
-          className="flex justify-center items-center border-x-2 duration-200 hover:scale-105  active:scale-100 p-2 text-[20px] font-bold flex gap-2 items-center"
+          className="flex items-center gap-1 border-x-2 px-3 py-1 text-[14px] sm:text-[18px] font-bold hover:scale-105 active:scale-100 duration-200"
         >
-          {t("navigation.arduino")}{" "}
-          <div>
-            <SiArduino />
-          </div>
+          {t("navigation.arduino")} <SiArduino />
         </Link>
         <Link
           to="/accumulators"
-          className="flex justify-center items-center border-x-2 duration-200 hover:scale-105 active:scale-100 p-2 text-[20px] font-bold"
+          className="flex items-center gap-1 border-x-2 px-3 py-1 text-[14px] sm:text-[18px] font-bold hover:scale-105 active:scale-100 duration-200"
         >
           {t("navigation.accumulators")}
         </Link>
         <Link
           to="/power"
-          className="flex justify-center items-center border-x-2 duration-200 hover:scale-105 active:scale-100 p-2 text-[20px] font-bold"
+          className="flex items-center gap-1 border-x-2 px-3 py-1 text-[14px] sm:text-[18px] font-bold hover:scale-105 active:scale-100 duration-200"
         >
           {t("navigation.power")}
         </Link>
         <Link
           to="/sensorsModules"
-          className="flex justify-center items-center border-x-2 duration-200 hover:scale-110 active:scale-100 p-2 text-[20px] font-bold"
+          className="flex items-center gap-1 border-x-2 px-3 py-1 text-[14px] sm:text-[18px] font-bold hover:scale-105 active:scale-100 duration-200"
         >
           {t("navigation.sensorsModules")}
         </Link>
         <Link
           to="/connectivity"
-          className="flex justify-center items-center border-x-2 duration-200 hover:scale-110 active:scale-100 p-2 text-[20px] font-bold"
+          className="flex items-center gap-1 border-x-2 px-3 py-1 text-[14px] sm:text-[18px] font-bold hover:scale-105 active:scale-100 duration-200"
         >
           {t("navigation.connectivity")}
         </Link>
-        {/* <Link
-          to="/accessories"
-          className="flex justify-center items-center border-x-2 duration-200 hover:scale-110 active:scale-100 p-2 text-[20px] font-bold"
-        >
-          {t("navigation.accessories")}
-        </Link>
-        <Link
-          to="/kits"
-          className="flex justify-center items-center border-x-2 duration-200 hover:scale-110 active:scale-100 p-2 text-[20px] font-bold"
-        >
-          {t("navigation.kits")}
-        </Link> */}
       </div>
+
+      <p className="text-sm opacity-70">© 2025 Elken. All rights reserved.</p>
     </div>
   );
 };
