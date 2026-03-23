@@ -88,7 +88,7 @@ function cart() {
                 key={prod.cartID}
                 className="bg-white shadow-2xl rounded-[30px] w-full flex flex-col sm:flex-row justify-between p-4 gap-4"
               >
-                <div className=" flex gap-3">
+                {/* <div className=" flex gap-3">
                   <div>
                     <img src={prod.images?.[0].img} className="w-24 sm:w-40" />
                   </div>
@@ -98,13 +98,29 @@ function cart() {
                       $ {prod.price}
                     </p>
                     <p>
-                      {t(prod.descriptionKey).slice(0, 50)} ...
+                      {t(prod.descriptionKey).slice(0, 50)} ... */}
+                <div className="flex gap-3">
+                  <div className="min-w-[80px]">
+                    <img
+                      src={prod.images?.[0].img}
+                      className="w-20 sm:w-40 object-contain"
+                    />
+                  </div>
+                  <div className="flex flex-col gap-2">
+                    <p className="text-[16px] sm:text-[20px] font-bold">
+                      {prod.name}
+                    </p>
+                    <p className="text-[16px] sm:text-[20px] text-green-600 font-medium">
+                      $ {prod.price}
+                    </p>
+                    <p className="text-xs sm:text-sm">
+                      {t(prod.descriptionKey).slice(0, 30)} ...
                       <Link
                         className="text-green-600 font-medium"
                         to={`/${prod.nameProduct}/${prod.id}`}
                       >
                         {" "}
-                        {t("seeMore", "see more")}
+                        {t("navigation.seeMore")}
                       </Link>
                     </p>
                     <p
@@ -152,9 +168,8 @@ function cart() {
           </div>
         )}
       </div>
-
-      <div className="flex justify-center items-start p-5 lg:items-center">
-        <div className="shadow-2xl p-6 flex flex-col gap-4 lg:fixed rounded-2xl bg-white w-full max-w-[300px]">
+      <div className="flex justify-center items-start p-5 lg:items-start lg:pt-10">
+        <div className="shadow-2xl p-6 flex flex-col gap-4 lg:sticky lg:top-10 rounded-2xl bg-white w-full max-w-[300px]">
           <button
             onClick={generalDelete}
             className="flex justify-center gap-3 cursor-pointer hover:text-red-600 font-bold p-2 w-40 rounded-full border"
