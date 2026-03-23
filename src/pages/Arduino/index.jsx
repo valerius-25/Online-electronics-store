@@ -108,9 +108,9 @@ const Arduino = () => {
       } flex flex-col gap-10 justify-center items-center min-h-screen`}
     >
       <div className="bg-gradient-to-r from-teal-950 via-emerald-400 to-teal-900 w-full">
-        <h1 className="text-[40px] font-bold text-stone-950 flex flex-col items-center">
+        <h1 className="text-[40px] sm:text-[25px] font-bold text-stone-950 flex flex-col items-center">
           Arduino
-          <span className="text-[50px]">
+          <span className="text-[40px] sm:text-[25px]">
             <SiArduino />
           </span>
         </h1>
@@ -142,7 +142,7 @@ const Arduino = () => {
                     className="font-bold text-green-600"
                     to={`/arduino/${prod.id}`}
                   >
-                    {t("seeMore", "see more")}
+                    {t("navigation.seeMore")}
                   </Link>
                 </p>
               </div>
@@ -162,10 +162,11 @@ const Arduino = () => {
 
               <div className="flex justify-center">
                 <Link
-                  to={`/arduino/${prod.id}`}
+                  to="/cart"
+                  onClick={() => addProductToCart(prod)}
                   className="border-2 p-3 rounded-full w-[100px] font-bold cursor-pointer hover:scale-110 active:scale-100 duration-150 flex justify-center items-center"
                 >
-                  BUY
+                  {t("navigation.buy")}
                 </Link>
               </div>
             </div>

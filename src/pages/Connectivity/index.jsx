@@ -100,8 +100,8 @@ const connectivity = () => {
         }`}
       >
         <header className="bg-gradient-to-r from-slate-950 via-sky-900 to-slate-950 w-full flex justify-center items-center gap-2 p-3 flex-col">
-          <p className="text-[50px] text-white font-bold">HiLetgo & SunFounder</p>
-          <div className="text-[50px] text-white">
+          <p className="text-[40px] sm:text-[25px] text-white font-bold">HiLetgo & SunFounder</p>
+          <div className="text-[40px] sm:text-[25px] text-white">
             <IoRadioSharp />
           </div>
         </header>
@@ -132,7 +132,7 @@ const connectivity = () => {
                       className="font-bold text-green-600"
                       to={`/connectivityDetails/${prod.id}`}
                     >
-                      {t("seeMore", "see more")}
+                      {t("navigation.seeMore")}
                     </Link>
                   </p>
                 </div>
@@ -152,10 +152,11 @@ const connectivity = () => {
 
                 <div className="flex justify-center">
                   <Link
-                    to={`/connectivityDetails/${prod.id}`}
+                    to="/cart"
+                    onClick={() => addProductToCart(prod)}
                     className="border-2 p-3 rounded-full w-[100px] font-bold cursor-pointer hover:scale-110 active:scale-100 duration-150 flex justify-center items-center"
                   >
-                    BUY
+                    {t("navigation.buy")}
                   </Link>
                 </div>
               </div>

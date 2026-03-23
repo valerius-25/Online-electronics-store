@@ -113,8 +113,8 @@ const power = () => {
         }`}
       >
         <header className="bg-amber-600 w-full flex justify-center items-center gap-2 p-3 flex-col">
-          <p className="text-[50px] text-white font-bold">SKYRC & ToolkitRC</p>
-          <div className="text-[50px] text-white">
+          <p className="text-[40px] sm:text-[25px] text-white font-bold">SKYRC & ToolkitRC</p>
+          <div className="text-[40px] sm:text-[25px] text-white">
             <ImPower />
           </div>
         </header>
@@ -145,7 +145,7 @@ const power = () => {
                       className="font-bold text-green-600"
                       to={`/power/${prod.id}`}
                     >
-                      {t("seeMore", "see more")}
+                      {t("navigation.seeMore")}
                     </Link>
                   </p>
                 </div>
@@ -165,10 +165,11 @@ const power = () => {
 
                 <div className="flex justify-center">
                   <Link
-                    to={`/power/${prod.id}`}
+                    to="/cart"
+                    onClick={() => addProductToCart(prod)}
                     className="border-2 p-3 rounded-full w-[100px] font-bold cursor-pointer hover:scale-110 active:scale-100 duration-150 flex justify-center items-center"
                   >
-                    BUY
+                    {t("navigation.buy")}
                   </Link>
                 </div>
               </div>

@@ -12,7 +12,9 @@
     "goback": "Go back",
     "remuve": "remuve",
     "products": "products",
-    "totalprice": "total"
+    "totalprice": "total",
+    "seeMore": "see more",
+    "buy":"BUY"
   },
   "arduino": {
     "uno": {

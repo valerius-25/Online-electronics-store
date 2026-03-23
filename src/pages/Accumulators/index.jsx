@@ -107,8 +107,8 @@ const Accumulators = () => {
         }`}
       >
         <header className="bg-gradient-to-r from-sky-950 via-blue-800 to-sky-950 w-full flex justify-center items-center gap-2 p-3 flex-col">
-          <p className="text-[50px] text-white font-bold">EVE Energy & Samsung SDI</p>
-          <div className="text-[50px] text-white">
+          <p className="text-[40px] sm:text-[25px] text-white font-bold">EVE Energy & Samsung SDI</p>
+          <div className="text-[40px] sm:text-[25px] text-white">
             <FaCarBattery />
           </div>
         </header>
@@ -138,7 +138,7 @@ const Accumulators = () => {
                       className="font-bold text-green-600"
                       to={`/accumulator/${prod.id}`}
                     >
-                      {t("seeMore", "see more")}
+                      {t("navigation.seeMore")}
                     </Link>
                   </p>
                 </div>
@@ -158,10 +158,11 @@ const Accumulators = () => {
 
                 <div className="flex justify-center">
                   <Link
-                    to={`/accumulator/${prod.id}`}
+                    to="/cart"
+                    onClick={() => addProductToCart(prod)}
                     className="border-2 p-3 rounded-full w-[100px] font-bold cursor-pointer hover:scale-110 active:scale-100 duration-150 flex justify-center items-center"
                   >
-                    BUY
+                    {t("navigation.buy")}
                   </Link>
                 </div>
               </div>

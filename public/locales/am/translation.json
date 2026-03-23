@@ -12,7 +12,9 @@
     "goback": "Հետ գնալ",
     "remuve": "Հեռացնել",
     "products": "Ապրանքներ",
-    "totalprice": "Ընդհանուր գին"
+    "totalprice": "Ընդհանուր գին",
+    "seeMore":"տեսնել ավելին",
+    "buy": "ԳՆԵԼ"
   },
   "arduino": {
     "uno": {

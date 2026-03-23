@@ -117,8 +117,10 @@ const sensorsModules = () => {
         }`}
       >
         <header className=" bg-emerald-700 w-full flex justify-center items-center gap-2 p-3 flex-col">
-          <p className="text-[50px] text-white font-bold">ASAIR & Luckylight & Adafruit</p>
-          <div className="text-[50px] text-white">
+          <p className="text-[40px] sm:text-[25px] text-white font-bold">
+            ASAIR & Luckylight & Adafruit
+          </p>
+          <div className="text-[40px] sm:text-[25px] text-white">
             <MdOutlineSensors />
           </div>
         </header>
@@ -149,7 +151,7 @@ const sensorsModules = () => {
                       className="font-bold text-green-600"
                       to={`/sensorsModules/${prod.id}`}
                     >
-                      {t("seeMore", "see more")}
+                      {t("navigation.seeMore")}
                     </Link>
                   </p>
                 </div>
@@ -169,10 +171,11 @@ const sensorsModules = () => {
 
                 <div className="flex justify-center">
                   <Link
-                    to={`/sensorsModules/${prod.id}`}
+                    to="/cart"
+                    onClick={() => addProductToCart(prod)}
                     className="border-2 p-3 rounded-full w-[100px] font-bold cursor-pointer hover:scale-110 active:scale-100 duration-150 flex justify-center items-center"
                   >
-                    BUY
+                    {t("navigation.buy")}
                   </Link>
                 </div>
               </div>

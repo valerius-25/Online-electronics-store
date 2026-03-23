@@ -12,7 +12,9 @@
     "goback": "Назад",
     "remuve": "Удалить",
     "products": "Товары",
-    "totalprice": "Итого"
+    "totalprice": "Итого",
+    "seeMore": "видеть больше",
+    "buy": "КУПИТЬ"
   },
   "arduino": {
     "uno": {
