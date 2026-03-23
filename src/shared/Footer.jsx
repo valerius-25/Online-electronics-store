@@ -84,7 +84,7 @@ const Footer = () => {
           {t("navigation.connectivity")}
         </Link>
       </div>
-      <p className="text-sm opacity-70">© 2025 Elken</p>
+      <p className="text-sm opacity-70">© valerius Elken 'Wojtek'</p>
     </div>
   );
 };

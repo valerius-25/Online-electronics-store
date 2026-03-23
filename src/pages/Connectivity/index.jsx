@@ -37,7 +37,7 @@ const connectivity = () => {
       newCart.push({
         ...product,
         count: 1,
-        nameProduct: "connectivity",
+        nameProduct: "connectivityDetails",
         cartID: crypto.randomUUID(),
       });
     }

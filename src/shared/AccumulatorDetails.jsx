@@ -20,7 +20,9 @@ function AccumulatorDetails() {
     axios
       .get(API_URL)
       .then((res) => {
-        const found = res.data.accumulators.find((item) => item.id === Number(id));
+        const found = res.data.accumulators.find(
+          (item) => item.id === Number(id)
+        );
         setProduct(found || null);
       })
       .catch(() => setProduct(null))
@@ -52,29 +54,31 @@ function AccumulatorDetails() {
         } `}
       >
         <div
-          className={`w-[80%] flex flex-col gap-5 p-5 ${
+          className={`w-full sm:w-[80%] flex flex-col gap-5 p-3 sm:p-5 ${
             dark ? "bg-slate-900" : "bg-slate-200"
           }`}
         >
           <h1
-            className={`text-[30px] font-bold ${
+            className={`text-[22px] sm:text-[30px] font-bold ${
+              dark ? "text-white" : "text-black"
+            }`}
+          ></h1>
+          <p
+            className={`text-[16px] sm:text-[20px] ${
               dark ? "text-white" : "text-black"
             }`}
           >
-            {product.name}
-          </h1>
-          <p className={`text-[20px] ${dark ? "text-white" : "text-black"}`}>
             {t(product.descriptionKey)}
           </p>
-          <div className="flex justify-between ">
-            <h1 className="text-[30px] text-green-600 font-bold">
+          <div className="flex justify-between items-center">
+            <h1 className="text-[24px] sm:text-[30px] text-green-600 font-bold">
               ${product.price}
             </h1>
             <div className="p-2 w-[60px] flex justify-center bg-white rounded-full text-stone-700">
               ID: {product.id}
             </div>
           </div>
-          <div className="p-10 grid grid-cols-3 gap-5">
+          <div className="p-2 sm:p-10 grid grid-cols-1 sm:grid-cols-3 gap-4">
             {product.images?.map((image) => (
               <div
                 key={image.id}
@@ -98,9 +102,13 @@ function AccumulatorDetails() {
 
             <div className="p-6">
               {product.parameters?.map((param) => (
-                <div className="p-5 flex justify-between border-b-2 border-stone-300">
-                  <samp className="font-bold text-xl text-gray-700 ">{t(param.nameKey)}</samp>
-                  <samp className="inline-block px-4 py-2 bg-blue-100 rounded-lg text-blue-600 font-bold">{param.value}</samp>
+                <div className="p-3 flex flex-col sm:flex-row justify-between gap-2 border-b-2 border-stone-300">
+                  <samp className="font-bold text-sm sm:text-xl text-gray-700">
+                    {t(param.nameKey)}
+                  </samp>
+                  <samp className="inline-block px-3 py-1 bg-blue-100 rounded-lg text-blue-600 font-bold text-sm sm:text-base">
+                    {param.value}
+                  </samp>
                 </div>
               ))}
             </div>

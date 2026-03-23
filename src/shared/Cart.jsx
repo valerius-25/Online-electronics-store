@@ -88,11 +88,11 @@ function cart() {
                 key={prod.cartID}
                 className="bg-white shadow-2xl rounded-[30px] w-full flex flex-col sm:flex-row justify-between p-4 gap-4"
               >
-                <div className="flex gap-3">
-                  <div className="min-w-[80px]">
+                <div className="flex flex-col sm:flex-row gap-3">
+                  <div className="flex justify-center">
                     <img
                       src={prod.images?.[0].img}
-                      className="w-20 sm:w-40 object-contain"
+                      className="w-32 sm:w-40 object-contain"
                     />
                   </div>
                   <div className="flex flex-col gap-2">

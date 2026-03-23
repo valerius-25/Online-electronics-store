@@ -1,20 +1,9 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { useTheme } from "./ThemeContext";
 import { useTranslation } from "react-i18next";
 import { RiSignalWifiErrorFill } from "react-icons/ri";
-
-
-
-  // {----------------------------------------------------------------------------------------------------------------}
-
-import { CiCircleMinus } from "react-icons/ci";
-import { CiCirclePlus } from "react-icons/ci";
-import { FaCartArrowDown } from "react-icons/fa";
-
-  // {----------------------------------------------------------------------------------------------------------------}
-
 
 const API_URL = import.meta.env.VITE_API_URL;
 
@@ -25,25 +14,15 @@ function ArduinoDetails() {
   const { dark } = useTheme();
   const { id } = useParams();
 
-  // {----------------------------------------------------------------------------------------------------------------}
-
-  const [count, setCount] = useState(1);
-  const [countP, setCountP] = useState(0);
-  const [countT, setCountT] = useState(0);
-  // {----------------------------------------------------------------------------------------------------------------}
-
-
   useEffect(() => {
     axios
-    .get(API_URL)
-    .then((res) => {
-      const found = res.data.arduino.find((item) => item.id === Number(id));
-      setProducts(found || null);
-      setCountP(found?.price);
-      setCountT(found?.price);
-    })
-    .catch(() => setProducts(null))
-    .finally(() => setLoding(false));
+      .get(API_URL)
+      .then((res) => {
+        const found = res.data.arduino.find((item) => item.id === Number(id));
+        setProducts(found || null);
+      })
+      .catch(() => setProducts(null))
+      .finally(() => setLoding(false));
   }, [id]);
 
   if (loading) {
@@ -65,25 +44,6 @@ function ArduinoDetails() {
     );
   }
 
-  // {----------------------------------------------------------------------------------------------------------------}
-  const minus = () => {
-    if (count === 1) {
-      return;
-    }
-
-    const newC = count - 1;
-    setCount(newC);
-    setCountT(newC * countP);
-  };
-
-  const plus = () => {
-    const newC = count + 1;
-    setCount(newC);
-    setCountT(newC * countP);
-  };
-
-  // {----------------------------------------------------------------------------------------------------------------}
-
   if (products) {
     return (
       <div
@@ -92,7 +52,7 @@ function ArduinoDetails() {
         } `}
       >
         <div
-          className={`w-[80%] flex flex-col gap-5 p-5 ${
+          className={`w-full sm:w-[80%] flex flex-col gap-5 p-3 sm:p-5 ${
             dark ? "bg-slate-900" : "bg-slate-200"
           }`}
         >
@@ -115,44 +75,7 @@ function ArduinoDetails() {
             </div>
           </div>
 
-          {/* // {----------------------------------------------------------------------------------------------------------------} */}
-
-          <div className=" border-stone-700 flex items-center justify-center p-2">
-            <div className="flex justify-between w-200">
-              <div className="flex gap-2">
-                <button
-                  onClick={minus}
-                  className="text-[50px] bg-red-600 text-white rounded-full  cursor-pointer active:scale-90"
-                >
-                  <CiCircleMinus />
-                </button>
-
-                <div className=" w-20 text-center text-xl font-bold flex justify-center bg-white items-center border-1 border-stone-400 rounded-full">
-                  {count}
-                </div>
-
-                <button
-                  onClick={plus}
-                  className="text-[50px] bg-blue-600 text-white rounded-full cursor-pointer active:scale-90"
-                >
-                  <CiCirclePlus />
-                </button>
-              </div>
-              <Link
-                to="/buy"
-                className="border-2 bg-white cursor-pointer w-50 active:scale-90 flex justify-center items-center rounded-full p-2  gap-5 text-[20px] font-bold"
-              >
-                {" "}
-                <p>
-                  <FaCartArrowDown />
-                </p>{" "}
-                BUY <p>${Math.round(countT)}</p>
-              </Link>
-            </div>
-          </div>
-          {/* // {----------------------------------------------------------------------------------------------------------------} */}
-
-          <div className="p-10 grid grid-cols-3 gap-5">
+          <div className="p-2 sm:p-10 grid grid-cols-1 sm:grid-cols-3 gap-4">
             {products.images?.map((image) => (
               <div
                 key={image.id}
@@ -176,11 +99,11 @@ function ArduinoDetails() {
 
             <div className="p-6">
               {products.parameters?.map((param) => (
-                <div className="p-5 flex justify-between border-b-2 border-stone-300">
-                  <samp className="font-bold text-xl text-gray-700 ">
+                <div className="p-3 flex flex-col sm:flex-row justify-between gap-2 border-b-2 border-stone-300">
+                  <samp className="font-bold text-sm sm:text-xl text-gray-700">
                     {t(param.nameKey)}
                   </samp>
-                  <samp className="inline-block px-4 py-2 bg-blue-100 rounded-lg text-blue-600 font-bold">
+                  <samp className="inline-block px-3 py-1 bg-blue-100 rounded-lg text-blue-600 font-bold text-sm sm:text-base">
                     {param.value}
                   </samp>
                 </div>
