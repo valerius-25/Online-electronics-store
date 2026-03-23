@@ -15,29 +15,32 @@ const power = () => {
   const { t } = useTranslation();
   const { dark } = useTheme();
 
-  const [loading, setLoding] = useState(true);
+  const [loading, setLoading] = useState(true);
   const [power, setPower] = useState(null);
   const [error, setError] = useState(null);
 
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   const addProductToCart = (product) => {
-    const local = JSON.parse(localStorage.getItem("products")) || []
-    const index = local.findIndex(item => item.id === product.id && item.name === product.name)
-    let newCart = [...local]
+    const local = JSON.parse(localStorage.getItem("products")) || [];
+    const index = local.findIndex(
+      (item) => item.id === product.id && item.name === product.name
+    );
+    let newCart = [...local];
     if (index !== -1) {
-      newCart[index] = {...newCart[index] , count: newCart[index].count + 1}
+      newCart[index] = { ...newCart[index], count: newCart[index].count + 1 };
+    } else {
+      newCart.push({
+        ...product,
+        count: 1,
+        nameProduct: "power",
+        cartID: crypto.randomUUID(),
+      });
     }
-    else {
-      newCart.push({...product, count: 1, nameProduct: "power", cartID: crypto.randomUUID()})
-    }
 
-    localStorage.setItem("products", JSON.stringify(newCart))
-    navigate("/cart")
-  }
-
-
-
+    localStorage.setItem("products", JSON.stringify(newCart));
+    navigate("/cart");
+  };
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -52,7 +55,7 @@ const power = () => {
             setError("internysk");
           }
         } finally {
-          setLoding(false);
+          setLoading(false);
         }
       }
       fetchProducts();
@@ -116,49 +119,98 @@ const power = () => {
           </div>
         </header>
 
-        <div className="grid grid-cols-3 p-10 gap-40">
-          {power.map((powers) => {
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 p-5 gap-8">
+          {power.map((prod) => {
             return (
               <div
-                key={powers.id}
+                key={prod.id}
                 className={`${
                   dark ? "bg-gray-900 text-white" : "bg-stone-200 text-black"
-                } w-[400px] h-[600px] shadow-xl/30 p-5 rounded-lg grid grid-rows-10`}
+                } shadow-xl rounded-lg p-5 flex flex-col gap-4`}
               >
-                <div className=" row-start-1 row-end-6 bg-white rounded-xl p-5 flex justify-center items-center">
+                <div className="rounded-xl flex justify-center bg-white p-3 h-[220px]">
                   <img
-                    src={powers.images?.[0].img}
-                    className="object-contain w-65"
+                    src={prod.images?.[0].img}
+                    className="object-contain h-full"
                   />
                 </div>
-                <div className="row-start-6 row-end-9 p-2 grid gap-3">
-                  <p className="text-[20px] font-bold">{powers.name}</p>
-                  <p>
-                    {t(powers.descriptionKey).slice(0, 100)}...
+
+                <div className="flex flex-col gap-2 flex-1">
+                  <p className="text-[20px] font-bold">{prod.name}</p>
+                  <p className="text-sm">
+                    {t(prod.descriptionKey).slice(0, 100)}...
                     <Link
-                      className="text-green-600 font-bold cursor-pointer"
-                      to={`/power/${powers.id}`}
+                      className="font-bold text-green-600"
+                      to={`/power/${prod.id}`}
                     >
-                      {t("seeMore", "see mor")}
+                      {t("seeMore", "see more")}
                     </Link>
                   </p>
                 </div>
-                <div className=" flex justify-between row-start-9 row-end-10 text-[30px] text-blue-600 font-bold">
-                  $ {powers.price}
-                  <Link 
-                  to="/cart"
-                  onClick={() => addProductToCart(powers)}
-                  className={`${dark ? "text-white" : "text-black"} cursor-pointer active:scale-90`}
+
+                <div className="text-[24px] text-blue-600 font-bold flex justify-between items-center">
+                  $ {prod.price}
+                  <Link
+                    onClick={() => addProductToCart(prod)}
+                    to="/cart"
+                    className={`${
+                      dark ? "text-white" : "text-black"
+                    } cursor-pointer active:scale-90`}
                   >
-                    < FaCartShopping />
+                    <FaCartShopping />
                   </Link>
                 </div>
-                <div className="flex justify-center items-center">
-                  <Link to={`/power/${powers.id}`} className="border-2 p-3 rounded-full w-[100px] font-bold cursor-pointer hover:scale-120 active:scale-100 duration-60 flex justify-center itmes-center  ">
+
+                <div className="flex justify-center">
+                  <Link
+                    to={`/power/${prod.id}`}
+                    className="border-2 p-3 rounded-full w-[100px] font-bold cursor-pointer hover:scale-110 active:scale-100 duration-150 flex justify-center items-center"
+                  >
                     BUY
                   </Link>
                 </div>
               </div>
+
+              // <div
+              //   key={powers.id}
+              //   className={`${
+              //     dark ? "bg-gray-900 text-white" : "bg-stone-200 text-black"
+              //   } w-[400px] h-[600px] shadow-xl/30 p-5 rounded-lg grid grid-rows-10`}
+              // >
+              //   <div className=" row-start-1 row-end-6 bg-white rounded-xl p-5 flex justify-center items-center">
+              //     <img
+              //       src={powers.images?.[0].img}
+              //       className="object-contain w-65"
+              //     />
+              //   </div>
+              //   <div className="row-start-6 row-end-9 p-2 grid gap-3">
+              //     <p className="text-[20px] font-bold">{powers.name}</p>
+              //     <p>
+              //       {t(powers.descriptionKey).slice(0, 100)}...
+              //       <Link
+              //         className="text-green-600 font-bold cursor-pointer"
+              //         to={`/power/${powers.id}`}
+              //       >
+              //         {t("seeMore", "see mor")}
+              //       </Link>
+              //     </p>
+              //   </div>
+              //   <div className=" flex justify-between row-start-9 row-end-10 text-[30px] text-blue-600 font-bold">
+              //     $ {powers.price}
+              //     <Link
+              //     to="/cart"
+              //     onClick={() => addProductToCart(powers)}
+              //     className={`${dark ? "text-white" : "text-black"} cursor-pointer active:scale-90`}
+              //     >
+              //       < FaCartShopping />
+              //     </Link>
+              //   </div>
+              //   <div className="flex justify-center items-center">
+              //     <Link to={`/power/${powers.id}`} className="border-2 p-3 rounded-full w-[100px] font-bold cursor-pointer hover:scale-120 active:scale-100 duration-60 flex justify-center itmes-center  ">
+              //       BUY
+              //     </Link>
+              //   </div>
+              // </div>
             );
           })}
         </div>

@@ -21,26 +21,29 @@ const connectivity = () => {
 
   const navigate = useNavigate();
   const addProductToCart = (product) => {
-    const local = JSON.parse(localStorage.getItem("products")) || []
+    const local = JSON.parse(localStorage.getItem("products")) || [];
 
     const index = local.findIndex(
-      item => item.id === product.id && 
-      item.name === product.name
-    )
-    let newCart = [...local]
+      (item) => item.id === product.id && item.name === product.name
+    );
+    let newCart = [...local];
 
     if (index !== -1) {
       newCart[index] = {
-        ...newCart[index], count: newCart[index].count + 1
-      }
+        ...newCart[index],
+        count: newCart[index].count + 1,
+      };
+    } else {
+      newCart.push({
+        ...product,
+        count: 1,
+        nameProduct: "connectivity",
+        cartID: crypto.randomUUID(),
+      });
     }
-    else {
-      newCart.push({...product, count: 1, nameProduct: "sensorsModules", cartID: crypto.randomUUID() })
-    }
-    localStorage.setItem("products" , JSON.stringify(newCart))
-    navigate("/cart")
-
-  }
+    localStorage.setItem("products", JSON.stringify(newCart));
+    navigate("/cart");
+  };
 
   useEffect(() => {
     const time = setTimeout(() => {
@@ -60,7 +63,7 @@ const connectivity = () => {
       }
       getProducts();
     }, 1000);
-    return () => clearInterval(time);
+    return () => clearTimeout(time);
   }, []);
 
   if (loading) {
@@ -103,25 +106,25 @@ const connectivity = () => {
           </div>
         </header>
 
-        <div className="grid grid-cols-3 p-10 gap-40">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 p-5 gap-8">
           {products.map((prod) => {
             return (
               <div
                 key={prod.id}
                 className={`${
                   dark ? "bg-gray-900 text-white" : "bg-stone-200 text-black"
-                }  h-[600px] shadow-xl/30 rounded-lg p-5 grid grid-rows-10`}
+                } shadow-xl rounded-lg p-5 flex flex-col gap-4`}
               >
-                <div className="row-start-1 row-end-6 rounded-xl flex justify-center bg-white">
+                <div className="rounded-xl flex justify-center bg-white p-3 h-[220px]">
                   <img
                     src={prod.images?.[0].img}
-                    className="object-contain w-50 "
+                    className="object-contain h-full"
                   />
                 </div>
 
-                <div className="row-start-6 row-end-9 p-2 grid gap-3">
+                <div className="flex flex-col gap-2 flex-1">
                   <p className="text-[20px] font-bold">{prod.name}</p>
-                  <p>
+                  <p className="text-sm">
                     {t(prod.descriptionKey).slice(0, 100)}...
                     <Link
                       className="font-bold text-green-600"
@@ -132,29 +135,78 @@ const connectivity = () => {
                   </p>
                 </div>
 
-                <div className="flex justify-between row-start-9 row-end-10 text-[30px] text-blue-600 font-bold ">
+                <div className="text-[24px] text-blue-600 font-bold flex justify-between items-center">
                   $ {prod.price}
                   <Link
-                    to={"/cart"}
                     onClick={() => addProductToCart(prod)}
+                    to="/cart"
                     className={`${
                       dark ? "text-white" : "text-black"
-                    } cursor-pointer`}
+                    } cursor-pointer active:scale-90`}
                   >
-                    {" "}
                     <FaCartShopping />
                   </Link>
                 </div>
 
-                <div className="flex justify-center items-center">
+                <div className="flex justify-center">
                   <Link
                     to={`/connectivityDetails/${prod.id}`}
-                    className="border-2 p-3 rounded-full w-[100px] font-bold cursor-pointer hover:scale-120 active:scale-100 duration-60 flex justify-center items-center"
+                    className="border-2 p-3 rounded-full w-[100px] font-bold cursor-pointer hover:scale-110 active:scale-100 duration-150 flex justify-center items-center"
                   >
                     BUY
                   </Link>
                 </div>
               </div>
+
+              // <div
+              //   key={prod.id}
+              //   className={`${
+              //     dark ? "bg-gray-900 text-white" : "bg-stone-200 text-black"
+              //   }  h-[600px] shadow-xl/30 rounded-lg p-5 grid grid-rows-10`}
+              // >
+              //   <div className="row-start-1 row-end-6 rounded-xl flex justify-center bg-white">
+              //     <img
+              //       src={prod.images?.[0].img}
+              //       className="object-contain w-50 "
+              //     />
+              //   </div>
+
+              //   <div className="row-start-6 row-end-9 p-2 grid gap-3">
+              //     <p className="text-[20px] font-bold">{prod.name}</p>
+              //     <p>
+              //       {t(prod.descriptionKey).slice(0, 100)}...
+              //       <Link
+              //         className="font-bold text-green-600"
+              //         to={`/connectivityDetails/${prod.id}`}
+              //       >
+              //         {t("seeMore", "see more")}
+              //       </Link>
+              //     </p>
+              //   </div>
+
+              //   <div className="flex justify-between row-start-9 row-end-10 text-[30px] text-blue-600 font-bold ">
+              //     $ {prod.price}
+              //     <Link
+              //       to={"/cart"}
+              //       onClick={() => addProductToCart(prod)}
+              //       className={`${
+              //         dark ? "text-white" : "text-black"
+              //       } cursor-pointer`}
+              //     >
+              //       {" "}
+              //       <FaCartShopping />
+              //     </Link>
+              //   </div>
+
+              //   <div className="flex justify-center items-center">
+              //     <Link
+              //       to={`/connectivityDetails/${prod.id}`}
+              //       className="border-2 p-3 rounded-full w-[100px] font-bold cursor-pointer hover:scale-120 active:scale-100 duration-60 flex justify-center items-center"
+              //     >
+              //       BUY
+              //     </Link>
+              //   </div>
+              // </div>
             );
           })}
         </div>
