@@ -165,55 +165,6 @@ const Accumulators = () => {
                   </Link>
                 </div>
               </div>
-
-              // <div
-              //   key={prod.id}
-              //   className={`${
-              //     dark ? "bg-gray-900 text-white" : "bg-stone-200 text-black"
-              //   }  h-[600px] shadow-xl/30 rounded-lg p-5 grid grid-rows-10`}
-              // >
-              //   <div className="row-start-1 row-end-6 rounded-xl flex justify-center bg-white">
-              //     <img
-              //       src={prod.images?.[0].img}
-              //       className="object-contain w-50 "
-              //     />
-              //   </div>
-
-              //   <div className="row-start-6 row-end-9 p-2 grid gap-3">
-              //     <p className="text-[20px] font-bold">{prod.name}</p>
-              //     <p>
-              //       {t(prod.descriptionKey).slice(0, 100)}...
-              //       <Link
-              //         className="font-bold text-green-600"
-              //         to={`/accumulator/${prod.id}`}
-              //       >
-              //         {t("seeMore", "see more")}
-              //       </Link>
-              //     </p>
-              //   </div>
-
-              //   <div className="row-start-9 row-end-10 text-[30px] text-blue-600 font-bold flex justify-between ">
-              //     $ {prod.price}
-              //     <Link
-              //       onClick={() => addProductToCart(prod)}
-              //       to="/cart"
-              //       className={`${
-              //         dark ? "text-white" : "text-black"
-              //       } cursor-pointer active:scale-90`}
-              //     >
-              //       <FaCartShopping />
-              //     </Link>
-              //   </div>
-
-              //   <div className="flex justify-center items-center">
-              //     <Link
-              //       to={`/accumulator/${prod.id}`}
-              //       className="border-2 p-3 rounded-full w-[100px] font-bold cursor-pointer hover:scale-120 active:scale-100 duration-60 flex justify-center items-center"
-              //     >
-              //       BUY
-              //     </Link>
-              //   </div>
-              // </div>
             );
           })}
         </div>

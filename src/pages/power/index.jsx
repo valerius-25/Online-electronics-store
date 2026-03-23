@@ -134,7 +134,7 @@ const power = () => {
                     className="object-contain h-full"
                   />
                 </div>
-                
+
                 <div className="flex flex-col gap-2">
                   <p className="text-[20px] font-bold leading-tight">
                     {prod.name}
@@ -172,47 +172,6 @@ const power = () => {
                   </Link>
                 </div>
               </div>
-
-              // <div
-              //   key={powers.id}
-              //   className={`${
-              //     dark ? "bg-gray-900 text-white" : "bg-stone-200 text-black"
-              //   } w-[400px] h-[600px] shadow-xl/30 p-5 rounded-lg grid grid-rows-10`}
-              // >
-              //   <div className=" row-start-1 row-end-6 bg-white rounded-xl p-5 flex justify-center items-center">
-              //     <img
-              //       src={powers.images?.[0].img}
-              //       className="object-contain w-65"
-              //     />
-              //   </div>
-              //   <div className="row-start-6 row-end-9 p-2 grid gap-3">
-              //     <p className="text-[20px] font-bold">{powers.name}</p>
-              //     <p>
-              //       {t(powers.descriptionKey).slice(0, 100)}...
-              //       <Link
-              //         className="text-green-600 font-bold cursor-pointer"
-              //         to={`/power/${powers.id}`}
-              //       >
-              //         {t("seeMore", "see mor")}
-              //       </Link>
-              //     </p>
-              //   </div>
-              //   <div className=" flex justify-between row-start-9 row-end-10 text-[30px] text-blue-600 font-bold">
-              //     $ {powers.price}
-              //     <Link
-              //     to="/cart"
-              //     onClick={() => addProductToCart(powers)}
-              //     className={`${dark ? "text-white" : "text-black"} cursor-pointer active:scale-90`}
-              //     >
-              //       < FaCartShopping />
-              //     </Link>
-              //   </div>
-              //   <div className="flex justify-center items-center">
-              //     <Link to={`/power/${powers.id}`} className="border-2 p-3 rounded-full w-[100px] font-bold cursor-pointer hover:scale-120 active:scale-100 duration-60 flex justify-center itmes-center  ">
-              //       BUY
-              //     </Link>
-              //   </div>
-              // </div>
             );
           })}
         </div>
