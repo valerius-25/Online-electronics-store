@@ -54,22 +54,22 @@ const Header = () => {
       </div>
 
       <div className="flex flex-wrap justify-center gap-2">
-        <Link to="/" className="flex items-center gap-1 border-x-2 px-3 py-1 text-[14px] sm:text-[16px] font-bold hover:scale-105 active:scale-100 duration-200">
+        <Link to="/" className="flex items-center gap-1 border-x-2 px-3 py-1 text-[14px] sm:text-[25px] font-bold hover:scale-105 active:scale-100 duration-200">
           {t("navigation.home")} <FaHome />
         </Link>
-        <Link to="/arduino" className="flex items-center gap-1 border-x-2 px-3 py-1 text-[14px] sm:text-[16px] font-bold hover:scale-105 active:scale-100 duration-200">
+        <Link to="/arduino" className="flex items-center gap-1 border-x-2 px-3 py-1 text-[14px] sm:text-[25px] font-bold hover:scale-105 active:scale-100 duration-200">
           {t("navigation.arduino")} <SiArduino />
         </Link>
-        <Link to="/accumulators" className="flex items-center gap-1 border-x-2 px-3 py-1 text-[14px] sm:text-[16px] font-bold hover:scale-105 active:scale-100 duration-200">
+        <Link to="/accumulators" className="flex items-center gap-1 border-x-2 px-3 py-1 text-[14px] sm:text-[25px] font-bold hover:scale-105 active:scale-100 duration-200">
           {t("navigation.accumulators")}
         </Link>
-        <Link to="/power" className="flex items-center gap-1 border-x-2 px-3 py-1 text-[14px] sm:text-[16px] font-bold hover:scale-105 active:scale-100 duration-200">
+        <Link to="/power" className="flex items-center gap-1 border-x-2 px-3 py-1 text-[14px] sm:text-[25px] font-bold hover:scale-105 active:scale-100 duration-200">
           {t("navigation.power")}
         </Link>
-        <Link to="/sensorsModules" className="flex items-center gap-1 border-x-2 px-3 py-1 text-[14px] sm:text-[16px] font-bold hover:scale-105 active:scale-100 duration-200">
+        <Link to="/sensorsModules" className="flex items-center gap-1 border-x-2 px-3 py-1 text-[14px] sm:text-[25px] font-bold hover:scale-105 active:scale-100 duration-200">
           {t("navigation.sensorsModules")}
         </Link>
-        <Link to="/connectivity" className="flex items-center gap-1 border-x-2 px-3 py-1 text-[14px] sm:text-[16px] font-bold hover:scale-105 active:scale-100 duration-200">
+        <Link to="/connectivity" className="flex items-center gap-1 border-x-2 px-3 py-1 text-[14px] sm:text-[25px] font-bold hover:scale-105 active:scale-100 duration-200">
           {t("navigation.connectivity")}
         </Link>
       </div>

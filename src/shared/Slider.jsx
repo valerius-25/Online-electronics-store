@@ -22,7 +22,7 @@ const Slider = () => {
   if (!loaded) return null;
 
   return (
-    <div className="w-full p-5 rounded-[50px]">
+    <div className="w-full px-2 sm:px-5 rounded-[20px] sm:rounded-[50px]">
       <Slide
         autoplay={true}
         duration={3000}
@@ -32,7 +32,7 @@ const Slider = () => {
         {images.map((image) => (
           <div key={image.id} className="each-slide w-full">
             <div
-              className="w-[100%] h-[100vh] bg-cover bg-center bg-no-repeat flex items-center justify-center"
+              className="w-full h-[40vh] sm:h-[60vh] lg:h-[100vh] bg-cover bg-center bg-no-repeat flex items-center justify-center"
               style={{ backgroundImage: `url(${image.url})` }}
             >
               <span className="opacity-0">slide</span>
