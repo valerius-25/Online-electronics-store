@@ -113,7 +113,7 @@ const Accumulators = () => {
           </div>
         </header>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 p-5 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 p-5 gap-12 max-w-[1200px] mx-auto">
           {accumulators.map((prod) => {
             return (
               <div
@@ -128,11 +128,12 @@ const Accumulators = () => {
                     className="object-contain h-full"
                   />
                 </div>
-
-                <div className="flex flex-col gap-2 flex-1">
-                  <p className="text-[20px] font-bold">{prod.name}</p>
-                  <p className="text-sm">
-                    {t(prod.descriptionKey).slice(0, 100)}...
+                <div className="flex flex-col gap-2">
+                  <p className="text-[20px] font-bold leading-tight">
+                    {prod.name}
+                  </p>
+                  <p className="text-sm h-[60px] overflow-hidden">
+                    {t(prod.descriptionKey).slice(0, 120)}...
                     <Link
                       className="font-bold text-green-600"
                       to={`/accumulator/${prod.id}`}
