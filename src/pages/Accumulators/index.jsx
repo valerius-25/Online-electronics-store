@@ -140,7 +140,7 @@ const Accumulators = () => {
                     </p>
                     <Link
                       className="font-bold text-green-600 text-sm"
-                      to={`/accumulators/${prod.id}`}
+                      to={`/accumulator/${prod.id}`}
                     >
                       {t("navigation.seeMore")}
                     </Link>

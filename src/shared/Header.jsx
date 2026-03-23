@@ -32,10 +32,10 @@ const Header = () => {
         <div className="flex gap-3 items-center">
           <div className="flex items-center gap-2">
             {currentLanguage && (
-              <img src={currentLanguage.flag} alt={currentLanguage.lng} className="w-6 h-6" />
+              <img src={currentLanguage.flag} alt={currentLanguage.lng} className="w-15 h-15" />
             )}
             <select
-              className="rounded px-2 bg-white text-black text-[45px] sm:text-[30px]"
+              className="rounded px-2 bg-white text-black text-[30px]"
               value={i18n.language}
               onChange={(e) => i18n.changeLanguage(e.target.value)}
             >
