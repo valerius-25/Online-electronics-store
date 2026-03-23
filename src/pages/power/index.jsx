@@ -113,7 +113,7 @@ const power = () => {
         }`}
       >
         <header className="bg-amber-600 w-full flex justify-center items-center gap-2 p-3 flex-col">
-          <p className="text-[50px] text-white font-bold">POWERS</p>
+          <p className="text-[50px] text-white font-bold">SKYRC & ToolkitRC</p>
           <div className="text-[50px] text-white">
             <ImPower />
           </div>

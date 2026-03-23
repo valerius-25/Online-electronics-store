@@ -100,7 +100,7 @@ const connectivity = () => {
         }`}
       >
         <header className="bg-gradient-to-r from-slate-950 via-sky-900 to-slate-950 w-full flex justify-center items-center gap-2 p-3 flex-col">
-          <p className="text-[50px] text-white font-bold">CONNECTIVITY</p>
+          <p className="text-[50px] text-white font-bold">HiLetgo & SunFounder</p>
           <div className="text-[50px] text-white">
             <IoRadioSharp />
           </div>

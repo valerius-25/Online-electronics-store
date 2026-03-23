@@ -107,7 +107,7 @@ const Accumulators = () => {
         }`}
       >
         <header className="bg-gradient-to-r from-sky-950 via-blue-800 to-sky-950 w-full flex justify-center items-center gap-2 p-3 flex-col">
-          <p className="text-[50px] text-white font-bold">CONNECTIVITY</p>
+          <p className="text-[50px] text-white font-bold">EVE Energy & Samsung SDI</p>
           <div className="text-[50px] text-white">
             <FaCarBattery />
           </div>

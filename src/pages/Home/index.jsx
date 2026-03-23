@@ -21,36 +21,36 @@ const Home = () => {
       </div>
 
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 p-4 gap-4 justify-items-center">
-        <div className="w-full max-w-[200px] aspect-square flex justify-center items-center">
+        <div className="w-full max-w-[200px] aspect-square flex justify-center items-center bg-white">
           <img
             src="/e119d7b9e07cc058ee7913d1f3ee9882.jpg"
             className="w-full h-full object-contain rounded-[30px] cursor-pointer hover:-translate-y-1 hover:shadow-xl duration-500 shadow-cyan-500/100"
           />
         </div>
-        <div className="w-full max-w-[200px] aspect-square flex justify-center items-center">
+        <div className="w-full max-w-[200px] aspect-square flex justify-center items-center bg-white">
           <img
             src="/Maxon-vertical-thumbnail.png"
-            className="w-full h-full object-contain rounded-[30px] cursor-pointer hover:-translate-y-1 hover:shadow-xl duration-500 shadow-cyan-500/100"
+            className="w-full h-full object-contain rounded-[30px] cursor-pointer hover:-translate-y-1 hover:shadow-xl duration-500 shadow-red-600/100"
           />
         </div>
-        <div className="w-full max-w-[200px] aspect-square flex justify-center items-center">
+        <div className="w-full max-w-[200px] aspect-square flex justify-center items-center bg-white">
           <img
             src="/ATL amperex_logo.png"
-            className="w-full h-full object-contain rounded-[30px] cursor-pointer hover:-translate-y-1 hover:shadow-xl duration-500 shadow-cyan-500/100"
+            className="w-full h-full object-contain rounded-[30px] cursor-pointer hover:-translate-y-1 hover:shadow-xl duration-500 shadow-blue-600/100"
           />
         </div>
-        <div className="w-full max-w-[200px] aspect-square flex justify-center items-center">
+        <div className="w-full max-w-[200px] aspect-square flex justify-center items-center bg-white">
           <img
             src="/byd.png"
-            className="w-full h-full object-contain rounded-[30px] cursor-pointer hover:-translate-y-1 hover:shadow-xl duration-500 shadow-cyan-500/100"
+            className="w-full h-full object-contain rounded-[30px] cursor-pointer hover:-translate-y-1 hover:shadow-xl duration-500 shadow-red-600/100"
           />
         </div>
-        <div className="w-full max-w-[200px] aspect-square flex justify-center items-center">
+        <div className="w-full max-w-[200px] aspect-square flex justify-center items-center bg-white">
           <img src="/TOTAL-HERRAMIENTAS-Logo-Vector.svg-.png" 
-          className="w-full h-full object-contain rounded-[30px] cursor-pointer hover:-translate-y-1 hover:shadow-xl duration-500 shadow-cyan-500/100" />
+          className="w-full h-full object-contain rounded-[30px] cursor-pointer hover:-translate-y-1 hover:shadow-xl duration-500 shadow-emerald-700/100" />
         </div>
-        <div className="w-full max-w-[200px] aspect-square flex justify-center items-center">
-          <img src="/makita logo.png" className="w-full h-full object-contain rounded-[30px] cursor-pointer hover:-translate-y-1 hover:shadow-xl duration-500 shadow-cyan-500/100" />
+        <div className="w-full max-w-[200px] aspect-square flex justify-center items-center bg-white">
+          <img src="/makita logo.png" className="w-full h-full object-contain rounded-[30px] cursor-pointer hover:-translate-y-1 hover:shadow-xl duration-500 shadow-red-600/100" />
         </div>
       </div>
     </section>

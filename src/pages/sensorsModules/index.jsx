@@ -116,8 +116,8 @@ const sensorsModules = () => {
             : "bg-white"
         }`}
       >
-        <header className=" bg-green-700 w-full flex justify-center items-center gap-2 p-3 flex-col">
-          <p className="text-[50px] text-white font-bold">SENSORS & MODULES</p>
+        <header className=" bg-emerald-700 w-full flex justify-center items-center gap-2 p-3 flex-col">
+          <p className="text-[50px] text-white font-bold">ASAIR & Luckylight & Adafruit</p>
           <div className="text-[50px] text-white">
             <MdOutlineSensors />
           </div>
